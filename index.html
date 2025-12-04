@@ -8,7 +8,11 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inconsolata:wght@200..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:ital,wght@0,100..900;1,100..900&family=Stack+Sans+Notch:wght@200..700&family=Stack+Sans+Text:wght@200..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Indie+Flower&family=Roboto:ital,wght@0,100..900;1,100..900&family=Stack+Sans+Notch:wght@200..700&family=Stack+Sans+Text:wght@200..700&display=swap" rel="stylesheet">
 
     <style>
       body {
@@ -17,21 +21,22 @@
         background-color: white;
       }
 
-      /* MAIN FRAME */
+      /* ─────────────── FRAME ─────────────── */
       .frame {
         max-width: 1440px;
         margin: 0 auto;
         background-color: grey;
+
+        /* The required 120px inner edge around ALL content */
+        padding: 120px;
+        box-sizing: border-box;
       }
 
-      /* CONTENT WRAPPER — now includes 120px top/bottom spacing */
+      /* The actual content area: 1200px centered inside the frame */
       .content-wrapper {
-        width: 1200px;
+        max-width: 1200px;
         margin: 0 auto;
-        padding-top: 120px;
-        padding-bottom: 120px;
         background-color: white;
-        /* keeps content area clean */
       }
 
       .header-banner img {
@@ -125,7 +130,7 @@
       }
 
       .projects h2 {
-        font-family: "Roboto", sans-serif;
+        font-family: "Playfair Display", serif;
         font-size: 2em;
         text-align: center;
         margin-bottom: 1em;
@@ -167,6 +172,7 @@
 
   <body>
     <div class="frame">
+
       <div class="content-wrapper">
 
         <!-- HEADER -->
@@ -218,6 +224,7 @@
           <h2>Project Overview</h2>
 
           <div class="project-row">
+
             <div class="project-card">
               <div class="project-thumb"></div>
               <p class="project-name">Card Game Design</p>
@@ -232,6 +239,7 @@
               <div class="project-thumb"></div>
               <p class="project-name">Poster Design</p>
             </div>
+
           </div>
         </div>
 
@@ -240,7 +248,8 @@
           © 2025 Amy Liu. All Rights Reserved.
         </footer>
 
-      </div>
-    </div>
+      </div> <!-- END content-wrapper -->
+
+    </div> <!-- END frame -->
   </body>
 </html>
