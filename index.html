@@ -1,20 +1,13 @@
-<!DOCTYPE html>
 <html lang="en-CA">
   <head>
     <meta charset="UTF-8">
-    <title>Assignment 3</title>
-    <!-- Created by Amy Liu on 2025 Dec 3 -->
-
-    <!-- Google Font 1 - Indie Flower-->
+    <title>Assignment 3</title> <!-- Created by Amy Liu on 2025 Dec 3 --> <!-- Google Font 1 - Indie Flower-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:ital,wght@0,100..900;1,100..900&family=Stack+Sans+Notch:wght@200..700&family=Stack+Sans+Text:wght@200..700&display=swap" rel="stylesheet">
-
-    <!-- Google Font 2 - Inconsolata -->
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:ital,wght@0,100..900;1,100..900&family=Stack+Sans+Notch:wght@200..700&family=Stack+Sans+Text:wght@200..700&display=swap" rel="stylesheet"> <!-- Google Font 2 - Inconsolata -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Indie+Flower&family=Roboto:ital,wght@0,100..900;1,100..900&family=Stack+Sans+Notch:wght@200..700&family=Stack+Sans+Text:wght@200..700&display=swap" rel="stylesheet">
-
     <style>
       body {
         margin: 0;
@@ -44,16 +37,16 @@
         display: flex;
         align-items: center;
         background-color: #e7d8c6;
-        padding: 7px 30px;
-        gap: 40px;
+        padding: 10px 30px;
+        gap: 35px;
       }
 
       nav a {
         text-decoration: none;
-        font-weight: 650;
-        font-size: 45px;
+        font-weight: 600;
+        font-size: 40px;
         color: #D7A4C5;
-        margin: 7px 20px;
+        margin: 0 25px;
       }
 
       nav a.selected {
@@ -63,7 +56,7 @@
       }
 
       .logo img {
-        height: 115px;
+        height: 120px;
         width: auto;
         margin-left: 2.5em;
       }
@@ -72,35 +65,25 @@
       .about-section {
         display: flex;
         gap: 2em;
-        padding: 6em 0;
+        padding: 3em 0;
         background-color: #244196;
         color: white;
       }
 
       .about-photo {
-        width: 300px;
-        height: auto;
-        margin-left: 6em;
-        margin-bottom: 0.6em;
-        margin-top: 0.5em;
+        width: 0%;
+        height: 320px;
+        background-color: #ccc;
+        border-radius: 10px;
       }
 
       .about-text {
-        padding-left: 3.5em;
-        gap: 0.6em;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-      }
-
-      .contact {
-        margin: 0;
+        width: 60%;
       }
 
       .about-text h2 {
-        font-family: 'Indie Flower', cursive;
-        font-size: 4em;
-        color: #D7A4C5;
+        font-family: "Playfair Display", serif;
+        font-size: 2em;
         margin-bottom: 0.5em;
       }
 
@@ -149,72 +132,39 @@
       }
     </style>
   </head>
-
-  <body>
-
-    <!-- ALL CONTENT IS INSIDE THIS 1200px WRAPPER -->
-    <div class="content-wrapper">
-
-      <!-- HEADER -->
-      <div class="header-banner">
-        <img src="Banner.jpg" alt="Banner contains my name">
-      </div>
-
-      <!-- NAV -->
+  <body> <!-- ALL CONTENT IS INSIDE THIS 1200px WRAPPER -->
+    <div class="content-wrapper"> <!-- HEADER -->
+      <div class="header-banner"> <img src="Banner.jpg" alt="Banner contains my name"> </div> <!-- NAV -->
       <nav>
-        <div class="logo">
-          <img src="Logo.PNG" alt="My logo">
-        </div>
-
-        <a href="#" class="selected"><strong>Home</strong></a>
-        <a href="#">Education</a>
-        <a href="#">Skills</a>
-        <a href="#">Projects</a>
-      </nav>
-
-      <!-- ABOUT -->
+        <div class="logo"> <img src="Logo.PNG" alt="My logo"> </div> <a href="#" class="selected"><strong>Home</strong></a> <a href="#">Education</a> <a href="#">Skills</a> <a href="#">Projects</a>
+      </nav> <!-- ABOUT -->
       <div class="about-section">
-        <img src="Profile.jpg" alt="My profile picture" class="about-photo">
+        <div class="profile"></div> <img src="profile.JPG" alt="My profile picture">
         <div class="about-text">
           <h2>About Me</h2>
-          <p>As a junior designer, I believe meaningful digital experiences begin with understanding people. I’m passionate about creating intuitive, human-centered interfaces that make users feel supported and empowered.</p>
-
-          <p> Having lived in three different countries, I’ve been shaped by diverse cultures and ways of communicating. This global perspective fuels my curiosity and empathy as a designer. I love exploring cultural behaviors and design traditions around the world, then weaving those insights into inclusive, thoughtful, and culturally aware digital experiences.</p>
-
+          <p>(Replace this placeholder text.) This describes yourself, your background, countries lived in, and design passion.</p>
           <p><strong>Email:</strong> example@email.com</p>
           <p><strong>Phone:</strong> 000-000-0000</p>
         </div>
-      </div>
-
-      <!-- PROJECT SECTION -->
+      </div> <!-- PROJECT SECTION -->
       <div class="projects">
         <h2>Project Overview</h2>
         <div class="project-row">
-
           <div class="project-card">
             <div class="project-thumb"></div> <!-- Replace -->
             <p class="project-name">Card Game Design</p>
           </div>
-
           <div class="project-card">
             <div class="project-thumb"></div> <!-- Replace -->
             <p class="project-name">Website Redesign</p>
           </div>
-
           <div class="project-card">
             <div class="project-thumb"></div> <!-- Replace -->
             <p class="project-name">Poster Design</p>
           </div>
-
         </div>
-      </div>
-
-      <!-- FOOTER -->
-      <footer>
-        © 2025 Amy Liu. All Rights Reserved.
-      </footer>
-
+      </div> <!-- FOOTER -->
+      <footer> © 2025 Amy Liu. All Rights Reserved. </footer>
     </div> <!-- END WRAPPER -->
-
   </body>
 </html>
