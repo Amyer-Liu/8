@@ -114,44 +114,53 @@
 
       /* ─────────────── PROJECTS ─────────────── */
       .projects {
-        padding: 3em 0;
         background-color: #EDE8E2;
+        padding: 2.2em 0 3em 0;
       }
 
       .projects h2 {
         font-family: "Indie Flower", cursive;
         color: #244196;
-        margin-bottom: 1em;
-        margin-top: -0.3em;
-        margin-left: 0.4em;
         font-size: 60px;
         text-transform: uppercase;
+        margin: 0 0 0.8em 0.6em;
       }
 
       .project-row {
-        margin-left: 2em;
-        margin-right: 2em;
         display: flex;
         justify-content: space-between;
-        gap: 2em;
-      }
-
-      .project-card img {
-        width: 100%;
-        height: 300px;
-        object-fit: cover;
-        border-radius: 10px;
+        gap: 2.2em;
+        padding: 0 2.5em;
       }
 
       .project-card {
         width: 30%;
+        text-align: center;
+      }
+
+      .project-frame {
+        background-color: #E6D9C7;
+        padding: 1.1em;
+        border-radius: 22px;
+      }
+
+      .project-frame img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 18px;
+        display: block;
       }
 
       .project-name {
-        text-align: center;
-        margin-top: 0.6em;
-        font-weight: 500;
-        font-family: "Inconsolata", monospace;
+        display: inline-block;
+        margin-top: 1em;
+        padding: 0.6em 1.4em;
+        border-radius: 20px;
+        background-color: #244196;
+        color: white;
+        font-weight: 100px;
+        font-size: 20px;
       }
 
       /* ─────────────── FOOTER ─────────────── */
@@ -196,7 +205,6 @@
               <p><strong>Phone:</strong> 6477690826</p>
             </div>
           </div>
-
           <div class="right-column">
             <h1>About Me</h1>
             <p> As a junior designer, I believe meaningful digital experiences begin with
@@ -214,25 +222,28 @@
           <h2>Project Overview</h2>
 
           <div class="project-row">
-
             <div class="project-card">
-              <img src="design1.PNG" alt="Burger Ops cover design">
+              <div class="project-frame">
+                <img src="design1.PNG" alt="Burger Ops cover design">
+              </div>
               <p class="project-name">Card Game Design</p>
             </div>
 
             <div class="project-card">
-              <img src="design2.PNG" alt="Purple Bubble Tea website redesign preview">
+              <div class="project-frame">
+                <img src="design2.PNG" alt="Purple Bubble Tea website redesign preview">
+              </div>
               <p class="project-name">Website Redesign</p>
             </div>
 
             <div class="project-card">
-              <img src="design3.PNG" alt="Embrace Sensitive Fun poster design">
+              <div class="project-frame">
+                <img src="design3.PNG" alt="Embrace Sensitive Fun poster design">
+              </div>
               <p class="project-name">Poster Design</p>
             </div>
-
           </div>
         </div>
-
         <!-- FOOTER -->
         <footer>
           © 2025 Amy Liu. All Rights Reserved.
