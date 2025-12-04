@@ -1,13 +1,15 @@
+<!DOCTYPE html>
 <html lang="en-CA">
   <head>
     <meta charset="UTF-8">
-    <title>Assignment 3</title> <!-- Created by Amy Liu on 2025 Dec 3 --> <!-- Google Font 1 - Indie Flower-->
+    <title>Assignment 3</title>
+    <!-- Created by Amy Liu on 2025 Dec 3 -->
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:ital,wght@0,100..900;1,100..900&family=Stack+Sans+Notch:wght@200..700&family=Stack+Sans+Text:wght@200..700&display=swap" rel="stylesheet"> <!-- Google Font 2 - Inconsolata -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Indie+Flower&family=Roboto:ital,wght@0,100..900;1,100..900&family=Stack+Sans+Notch:wght@200..700&family=Stack+Sans+Text:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:ital,wght@0,100..900;1,100..900&family=Stack+Sans+Notch:wght@200..700&family=Stack+Sans+Text:wght@200..700&family=Inconsolata:wght@200..900&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
     <style>
       body {
         margin: 0;
@@ -19,17 +21,13 @@
 
       .content-wrapper {
         width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
         background-color: white;
       }
 
       .header-banner img {
         width: 100%;
-        height: 50%;
-        margin-left: 3em;
-        background-color: white;
-        align-items: center;
+        height: auto;
       }
 
       /* ─────────────── NAVIGATION ─────────────── */
@@ -37,16 +35,16 @@
         display: flex;
         align-items: center;
         background-color: #e7d8c6;
-        padding: 10px 30px;
-        gap: 35px;
+        padding: 7px 30px;
+        gap: 40px;
       }
 
       nav a {
         text-decoration: none;
         font-weight: 600;
-        font-size: 40px;
+        font-size: 45px;
         color: #D7A4C5;
-        margin: 0 25px;
+        margin: 7px 20px;
       }
 
       nav a.selected {
@@ -56,35 +54,58 @@
       }
 
       .logo img {
-        height: 120px;
+        height: 115px;
         width: auto;
         margin-left: 2.5em;
       }
 
       /* ─────────────── ABOUT SECTION ─────────────── */
       .about-section {
-        display: flex;
-        gap: 2em;
-        padding: 3em 0;
+        display: grid;
+        grid-template-columns: 260px 600px; /* left photo, right text */
+        gap: 3em;
+        padding: 4em 6em; /* top/bottom + left/right padding */
         background-color: #244196;
         color: white;
+        align-items: start;
+      }
+
+      .left-column {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* remove justify-content */
       }
 
       .about-photo {
-        width: 0%;
-        height: 320px;
-        background-color: #ccc;
+        width: 260px; /* match column width */
+        height: auto;
         border-radius: 10px;
+        margin-bottom: 1.5em; /* pushes contact below photo */
       }
 
-      .about-text {
-        width: 60%;
+      .contact-box {
+        text-align: left;
+        font-size: 1.1rem;
+        line-height: 1.4em;
       }
 
-      .about-text h2 {
-        font-family: "Playfair Display", serif;
-        font-size: 2em;
-        margin-bottom: 0.5em;
+      .right-column {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .right-column h2 {
+        font-family: 'Indie Flower', cursive;
+        font-size: 3.5rem;
+        color: #D7A4C5;
+        margin-bottom: 1em;
+      }
+
+      .right-column p {
+        font-family: "Inconsolata", monospace;
+        font-size: 1.1rem;
+        line-height: 1.55;
+        margin-bottom: 1em;
       }
 
       /* ─────────────── PROJECTS ─────────────── */
@@ -132,39 +153,82 @@
       }
     </style>
   </head>
-  <body> <!-- ALL CONTENT IS INSIDE THIS 1200px WRAPPER -->
-    <div class="content-wrapper"> <!-- HEADER -->
-      <div class="header-banner"> <img src="Banner.jpg" alt="Banner contains my name"> </div> <!-- NAV -->
+
+  <body>
+
+    <div class="content-wrapper">
+
+      <!-- HEADER -->
+      <div class="header-banner">
+        <img src="Banner.jpg" alt="Banner contains my name">
+      </div>
+
+      <!-- NAV -->
       <nav>
-        <div class="logo"> <img src="Logo.PNG" alt="My logo"> </div> <a href="#" class="selected"><strong>Home</strong></a> <a href="#">Education</a> <a href="#">Skills</a> <a href="#">Projects</a>
-      </nav> <!-- ABOUT -->
-      <div class="about-section">
-        <div class="profile"></div> <img src="profile.JPG" alt="My profile picture">
-        <div class="about-text">
-          <h2>About Me</h2>
-          <p>(Replace this placeholder text.) This describes yourself, your background, countries lived in, and design passion.</p>
-          <p><strong>Email:</strong> example@email.com</p>
-          <p><strong>Phone:</strong> 000-000-0000</p>
+        <div class="logo">
+          <img src="Logo.PNG" alt="My logo">
         </div>
-      </div> <!-- PROJECT SECTION -->
+
+        <a href="#" class="selected"><strong>Home</strong></a>
+        <a href="#">Education</a>
+        <a href="#">Skills</a>
+        <a href="#">Projects</a>
+      </nav>
+
+      <!-- ABOUT -->
+      <div class="about-section">
+        <div class="left-column">
+          <img src="Profile.jpg" alt="My profile picture" class="about-photo">
+          <div class="contact-box">
+            <p><strong>Email:</strong> example@email.com</p>
+            <p><strong>Phone:</strong> 000-000-0000</p>
+          </div>
+        </div>
+        <div class="right-column">
+          <h2>About Me</h2>
+          <p>
+            As a junior designer, I believe meaningful digital experiences begin with understanding people.
+            I’m passionate about creating intuitive, human-centered interfaces that make users feel supported
+            and empowered.
+          </p>
+          <p>
+            Having lived in three different countries, I’ve been shaped by diverse cultures and ways of communicating.
+            This global perspective fuels my curiosity and empathy as a designer. I love exploring cultural behaviors
+            and design traditions around the world, then weaving those insights into inclusive, thoughtful, and
+            culturally aware digital experiences.
+          </p>
+        </div>
+      </div>
+
+      <!-- PROJECT SECTION -->
       <div class="projects">
         <h2>Project Overview</h2>
+
         <div class="project-row">
+
           <div class="project-card">
-            <div class="project-thumb"></div> <!-- Replace -->
+            <div class="project-thumb"></div>
             <p class="project-name">Card Game Design</p>
           </div>
+
           <div class="project-card">
-            <div class="project-thumb"></div> <!-- Replace -->
+            <div class="project-thumb"></div>
             <p class="project-name">Website Redesign</p>
           </div>
+
           <div class="project-card">
-            <div class="project-thumb"></div> <!-- Replace -->
+            <div class="project-thumb"></div>
             <p class="project-name">Poster Design</p>
           </div>
         </div>
-      </div> <!-- FOOTER -->
-      <footer> © 2025 Amy Liu. All Rights Reserved. </footer>
+      </div>
+
+      <!-- FOOTER -->
+      <footer>
+        © 2025 Amy Liu. All Rights Reserved.
+      </footer>
+
     </div> <!-- END WRAPPER -->
+
   </body>
 </html>
