@@ -20,11 +20,11 @@
         font-family: "Inconsolata", monospace;
         background-color: #ffffff;
         justify-content: center;
+        display: flex;
       }
 
       .frame {
         width: 1440px;
-        margin: 0 auto;
         background-color: #d3d3d3;
         padding: 120px 0;
       }
@@ -32,31 +32,44 @@
       .content-wrapper {
         width: 1200px;
         padding: 0;
-        margin: 0 120px;
+        margin: 0 auto;
         background-color: white;
       }
 
+      .header-banner {
+        text-align: center;
+        padding: 2em 0;
+      }
+
       .header-banner img {
-        width: 80%;
+        width: 90%;
         height: auto;
-        margin-left: 8em;
       }
 
       /* ─────────────── NAVIGATION ─────────────── */
       nav {
         display: flex;
         align-items: center;
+        justify-content: center;
         background-color: #e7d8c6;
-        padding: 10px 30px;
+        padding: 20px 30px;
         gap: 40px;
       }
 
       nav a {
         text-decoration: none;
         font-weight: 600;
-        font-size: 45px;
+        font-size: 40px;
         color: #D7A4C5;
-        margin: 7px 20px;
+        margin: 8px 20px;
+      }
+
+      nav a:hover {
+        color: #DE3783;
+      }
+
+      nav a:visited {
+        color: #C39CB9;
       }
 
       nav a.selected {
@@ -67,31 +80,45 @@
         text-underline-offset: 10px;
       }
 
-      .logo img {
-        height: 100px;
-        width: auto;
+      .logo {
+        width: 140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 30px;
       }
+
+      .logo img {
+        height: 120px;
+        width: auto;
+        display: block;
+      }
+
 
       /* ─────────────── ABOUT ME SECTION ─────────────── */
       .about-container {
         display: grid;
         grid-template-columns: 40% 60%;
-        gap: 2em;
+        gap: 5%;
         background-color: #244196;
         color: white;
-        padding: 2em 120px;
+        padding: 4em 80px;
+        align-items: flex-start;
       }
 
       .left-column img {
         width: 100%;
-        margin-left: -2em;
+        height: auto;
+        border: 3px solid #D7A4C5;
         margin-top: 8em;
+        margin-bottom: 35px;
+        display: block;
       }
 
       .contact-box {
-        font-size: 20px;
-        line-height: 15px;
-        margin-left: -1.4em;
+        font-size: 22px;
+        line-height: 1.2;
+        margin-top: 0;
       }
 
       .right-column h1 {
@@ -115,7 +142,7 @@
       /* ─────────────── PROJECTS ─────────────── */
       .projects {
         background-color: #EDE8E2;
-        padding: 2.2em 0 3em 0;
+        padding: 4em 90px;
       }
 
       .projects h2 {
@@ -123,14 +150,14 @@
         color: #244196;
         font-size: 60px;
         text-transform: uppercase;
-        margin: 0 0 0.8em 0.6em;
+        margin: -0.4em 0 0.4em 0;
       }
 
       .project-row {
         display: flex;
         justify-content: space-between;
-        gap: 2.2em;
-        padding: 0 2.5em;
+        gap: 4.5em;
+        padding: 0;
       }
 
       .project-card {
@@ -262,10 +289,7 @@
           <h2 class="footer-name">Amy Liu</h2>
           <p class="footer-copyright">© 2025 Amy Liu. All Rights Reserved.</p>
         </footer>
-
-
-      </div> <!-- END content-wrapper -->
-
-    </div> <!-- END frame -->
+      </div>
+    </div>
   </body>
 </html>
