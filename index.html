@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+  <head>
+    <meta charset="UTF-8">
+    <title>Assignment 3</title>
+    <!-- Created by Amy Liu on 2025 Dec 3 -->
+
+    <!-- Google Font 1 - Indie Flower-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:ital,wght@0,100..900;1,100..900&family=Stack+Sans+Notch:wght@200..700&family=Stack+Sans+Text:wght@200..700&display=swap" rel="stylesheet">
+
+    <!-- Google Font 2 - Inconsolata -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Indie+Flower&family=Roboto:ital,wght@0,100..900;1,100..900&family=Stack+Sans+Notch:wght@200..700&family=Stack+Sans+Text:wght@200..700&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        margin: 0;
+        font-family: "Inconsolata", monospace;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+      }
+
+      .content-wrapper {
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+      }
+
+      .header-banner img {
+        width: 100%;
+        height: 50%;
+        margin-left: 3em;
+        background-color: white;
+        align-items: center;
+      }
+
+      /* ─────────────── NAVIGATION ─────────────── */
+      nav {
+        display: flex;
+        align-items: center;
+        background-color: #e7d8c6;
+        padding: 7px 30px;
+        gap: 40px;
+      }
+
+      nav a {
+        text-decoration: none;
+        font-weight: 650;
+        font-size: 45px;
+        color: #D7A4C5;
+        margin: 7px 20px;
+      }
+
+      nav a.selected {
+        color: #DE3783;
+        text-decoration: underline;
+        text-decoration-thickness: 8px;
+      }
+
+      .logo img {
+        height: 115px;
+        width: auto;
+        margin-left: 2.5em;
+      }
+
+      /* ─────────────── ABOUT SECTION ─────────────── */
+      .about-section {
+        display: flex;
+        gap: 2em;
+        padding: 3em 0;
+        background-color: #244196;
+        color: white;
+        align-items: flex-start;
+      }
+
+      .about-photo {
+        width: 300px;
+        height: auto;
+        margin-left: 6em;
+        margin-bottom: 0.6em;
+        margin-top: 0.5em;
+      }
+
+      .about-text {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.6em;
+      }
+
+      .contact {
+        margin: 0;
+      }
+
+      .about-text h2 {
+        font-family: 'Indie Flower', cursive;
+        font-size: 4em;
+        color: #D7A4C5;
+        margin-bottom: 0.5em;
+      }
+
+      /* ─────────────── PROJECTS ─────────────── */
+      .projects {
+        padding: 3em 0;
+      }
+
+      .projects h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 2em;
+        text-align: center;
+        margin-bottom: 1em;
+      }
+
+      .project-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 2em;
+      }
+
+      .project-card {
+        width: 33%;
+      }
+
+      .project-thumb {
+        width: 100%;
+        height: 200px;
+        background-color: #ddd;
+        border-radius: 10px;
+      }
+
+      .project-name {
+        text-align: center;
+        margin-top: 0.6em;
+        font-weight: 500;
+      }
+
+      /* ─────────────── FOOTER ─────────────── */
+      footer {
+        text-align: center;
+        padding: 2em 0;
+        background-color: #f7f7f7;
+        margin-top: 2em;
+        font-size: 0.9em;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- ALL CONTENT IS INSIDE THIS 1200px WRAPPER -->
+    <div class="content-wrapper">
+
+      <!-- HEADER -->
+      <div class="header-banner">
+        <img src="Banner.jpg" alt="Banner contains my name">
+      </div>
+
+      <!-- NAV -->
+      <nav>
+        <div class="logo">
+          <img src="Logo.PNG" alt="My logo">
+        </div>
+
+        <a href="#" class="selected"><strong>Home</strong></a>
+        <a href="#">Education</a>
+        <a href="#">Skills</a>
+        <a href="#">Projects</a>
+      </nav>
+
+      <!-- ABOUT -->
+      <div class="about-section">
+        <img src="Profile.jpg" alt="My profile picture" class="about-photo">
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>As a junior designer, I believe meaningful digital experiences begin with understanding people. I’m passionate about creating intuitive, human-centered interfaces that make users feel supported and empowered.</p>
+
+          <p> Having lived in three different countries, I’ve been shaped by diverse cultures and ways of communicating. This global perspective fuels my curiosity and empathy as a designer. I love exploring cultural behaviors and design traditions around the world, then weaving those insights into inclusive, thoughtful, and culturally aware digital experiences.</p>
+
+          <p class="contact"><strong>Email:</strong> example@email.com</p>
+          <p class="contact"><strong>Phone:</strong> 000-000-0000</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT SECTION -->
+    <div class="projects">
+      <h2>Project Overview</h2>
+      <div class="project-row">
+
+        <div class="project-card">
+          <div class="project-thumb"></div> <!-- Replace -->
+          <p class="project-name">Card Game Design</p>
+        </div>
+
+        <div class="project-card">
+          <div class="project-thumb"></div> <!-- Replace -->
+          <p class="project-name">Website Redesign</p>
+        </div>
+
+        <div class="project-card">
+          <div class="project-thumb"></div> <!-- Replace -->
+          <p class="project-name">Poster Design</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      © 2025 Amy Liu. All Rights Reserved.
+    </footer>
+
+    </div> <!-- END WRAPPER -->
+
+  </body>
+</html>
