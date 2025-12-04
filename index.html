@@ -68,39 +68,62 @@
       .about-container {
         width: 1200px;
         display: grid;
-        grid-template-columns: 300px 700px;
-        gap: 2em;
-        padding: 3em 0;
+        grid-template-columns: 360px 1fr;
+        /* photo + text */
+        grid-template-rows: auto 1fr;
+        /* title + content */
+        column-gap: 3em;
+        padding: 3em 3em 3.5em;
         background-color: #244196;
         color: white;
+      }
+
+      /* centered ABOUT ME title spanning full width */
+      .about-title {
+        grid-column: 1 / 3;
+        justify-self: center;
+        font-family: "Indie Flower", cursive;
+        font-size: 56px;
+        letter-spacing: 0.12em;
+        color: #D7A4C5;
+        margin: 0 0 0.9em;
+        text-transform: uppercase;
+      }
+
+      .left-column {
+        grid-row: 2;
       }
 
       .left-column img {
         width: 100%;
         height: auto;
+        margin-left: 24px;
+        /* push photo in from the left */
         margin-bottom: 16px;
+        border-radius: 4px;
       }
 
       .contact-box {
         font-size: 16px;
         line-height: 24px;
         text-align: left;
+        margin-left: 24px;
+        /* align with photo */
       }
 
-      .right-column h2 {
-        font-family: 'Indie Flower', cursive;
-        font-size: 32px;
-        color: #D7A4C5;
-        margin-bottom: 12px;
-        border-bottom: 2px solid #D7A4C5;
-        padding-bottom: 4px;
+      .right-column {
+        grid-row: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
 
       .right-column p {
         font-family: "Inconsolata", monospace;
-        font-size: 25px;
-        line-height: 24px;
-        margin-bottom: 12px;
+        font-size: 20px;
+        line-height: 1.7;
+        max-width: 620px;
+        margin: 0 0 1em;
       }
 
       /* ─────────────── PROJECTS ─────────────── */
@@ -172,6 +195,7 @@
 
       <!-- ABOUT -->
       <div class="about-container">
+        <h2 class="about-title">ABOUT ME</h2>
 
         <div class="left-column">
           <img src="Profile.jpg" alt="My profile picture">
@@ -182,20 +206,19 @@
         </div>
 
         <div class="right-column">
-          <h2>About Me</h2>
           <p>
-            As a junior designer, I believe meaningful digital experiences begin with understanding people.
-            I’m passionate about creating intuitive, human-centered interfaces that make users feel supported
-            and empowered.
+            As a junior designer, I believe meaningful digital experiences begin with
+            understanding people. I’m passionate about creating intuitive, human-centered
+            interfaces that make users feel supported and empowered.
           </p>
           <p>
-            Having lived in three different countries, I’ve been shaped by diverse cultures and ways of communicating.
-            This global perspective fuels my curiosity and empathy as a designer. I love exploring cultural behaviors
-            and design traditions around the world, then weaving those insights into inclusive, thoughtful, and
-            culturally aware digital experiences.
+            Having lived in three different countries, I’ve been shaped by diverse cultures
+            and ways of communicating. This global perspective fuels my curiosity and empathy
+            as a designer. I love exploring cultural behaviors and design traditions around
+            the world, then weaving those insights into inclusive, thoughtful, and culturally
+            aware digital experiences.
           </p>
         </div>
-
       </div>
       <!-- PROJECT SECTION -->
       <div class="projects">
