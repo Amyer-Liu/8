@@ -23,16 +23,12 @@
 
       /* ─────────────── FRAME ─────────────── */
       .frame {
-        max-width: 1440px;
+        width: 1440px;
         margin: 0 auto;
         background-color: #d3d3d3;
-
-        /* The required 120px inner edge around ALL content */
-        padding: 120px;
-        box-sizing: border-box;
+        padding: 120px 0;
       }
 
-      /* The actual content area: 1200px centered inside the frame */
       .content-wrapper {
         max-width: 1200px;
         margin: 0 auto;
@@ -76,32 +72,34 @@
       /* ─────────────── ABOUT SECTION ─────────────── */
       .about-container {
         display: grid;
-        column-gap: 5em;
-        padding: 3em 3em 10em;
+        grid-template-columns: 40% 60%;
+        column-gap: 1em;
         background-color: #244196;
         color: white;
       }
 
       .about-title {
         grid-column: 1 / 3;
+        margin-left: 8em;
         justify-self: center;
         font-family: "Indie Flower", cursive;
         font-size: 56px;
         letter-spacing: 0.12em;
         color: #D7A4C5;
-        margin: 0 0 0.9em 9em;
         text-transform: uppercase;
       }
 
       .left-column {
-        grid-row: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
       }
 
       .left-column img {
         width: 100%;
         height: auto;
-        margin-bottom: 16px;
-        border-radius: 4px;
+        margin-bottom: 1em;
+        margin-left: 5em;
       }
 
       .contact-box {
@@ -110,18 +108,17 @@
       }
 
       .right-column {
-        grid-row: 2;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
       }
 
       .right-column p {
         font-family: "Inconsolata", monospace;
-        font-size: 20px;
+        font-size: 24px;
         line-height: 1.7;
         max-width: 620px;
-        margin: 0 0 1em;
+        margin: 0 0 1em 0;
       }
 
       /* ─────────────── PROJECTS ─────────────── */
@@ -218,7 +215,6 @@
             </p>
           </div>
         </div>
-
         <!-- PROJECT SECTION -->
         <div class="projects">
           <h2>Project Overview</h2>
