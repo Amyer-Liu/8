@@ -56,6 +56,7 @@
         gap: 40px;
         position: sticky;
         top: 0;
+        z-index: 9999;
       }
 
       nav a {
@@ -244,7 +245,7 @@
 
       #education .edu-heading {
         font-family: "Indie Flower", cursive;
-        font-size: 60px;
+        font-size: 50px;
         letter-spacing: 1.5px;
         text-transform: uppercase;
         margin: 0 0 40px 0;
@@ -259,14 +260,14 @@
         display: flex;
         align-items: center;
         gap: 25px;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
       }
 
       #education .meta-star {
         color: #DE3783;
         font-size: 60px;
         line-height: 1;
-        margin-top: -0.2em;
+        margin-top: -0.1em;
       }
 
       #education .meta-pill {
@@ -274,22 +275,24 @@
         padding: 10px 18px;
         border-radius: 999px;
         background: #5580B5;
-        font-size: 30px;
+        font-size: 35px;
+        margin-top: 0.1em;
       }
 
       #education .timeline-title {
         margin: 0 0 8px 0;
         font-size: 35px;
-        font-weight: 500;
+        font-weight: 200px;
         margin-left: 2em;
       }
 
       #education .timeline-sub {
         margin: 0;
-        font-size: 30px;
+        font-size: 27px;
         line-height: 1.5;
-        max-width: 600px;
-        margin-left: 2.4em;
+        max-width: 400px;
+        margin-left: 2.6em;
+        padding-top: 0.3em;
       }
 
       #education .software-item {
@@ -308,14 +311,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 0.2em;
+        margin-top: 0.3em;
       }
 
       #education .software-badge img {
         width: 40px;
         height: 40px;
         object-fit: cover;
-        object-position: center;
         display: block;
       }
 
@@ -338,7 +340,7 @@
 
       #education .exp-grid {
         display: grid;
-        grid-template-columns: 48% 52%;
+        grid-template-columns: 47% 53%;
         gap: 80px;
         align-items: start;
       }
@@ -352,7 +354,7 @@
 
       #education .extras-title {
         font-family: "Indie Flower", cursive;
-        font-size: 56px;
+        font-size: 60px;
         margin: 0 0 34px 0;
         color: #244196;
       }
@@ -360,7 +362,9 @@
       #education .extras-row {
         display: grid;
         grid-template-columns: 150px 150px 150px 150px 150px 150px;
-        gap: 25px;
+        gap: 45px;
+        margin-left: -3.5em;
+        margin-top: -2em;
         justify-items: center;
         align-items: start;
       }
@@ -373,12 +377,12 @@
       }
 
       #education .extra-icon {
-        margin-bottom: 14px;
+        margin-bottom: 15px;
       }
 
       #education .extra-icon img {
-        width: 150px;
-        height: 150px;
+        width: 180px;
+        height: 180px;
         object-fit: contain;
         display: block;
       }
@@ -386,10 +390,9 @@
       #education .extra-label {
         margin: 0;
         color: #DE3783;
-        font-weight: 700;
+        font-weight: 700px;
         font-size: 30px;
         line-height: 1.15;
-        max-width: 120px;
       }
 
       #education .edu-bottom {
@@ -400,78 +403,52 @@
 
       #education .bottom-grid {
         display: grid;
-        grid-template-columns: 0.95fr 1.05fr;
-        gap: 70px;
+        grid-template-columns: 50% 50%;
+        gap: 60px;
         align-items: start;
       }
 
-      /* START: Languages FIXES */
       #education .lang-item {
-        /* FIX: Must be a grid for template-columns to work */
         display: grid;
-        grid-template-columns: 150px 1fr;
+        grid-template-columns: 55% 45%;
         margin: 28px 0;
       }
 
       #education .lang-name {
-        /* FIX: Increased size for better match */
         font-size: 60px;
-        /* Was 46px */
         font-weight: 900;
         line-height: 1;
+        margin-top: 0.2em;
       }
 
-      /* NEW: Styling for the fluency level */
       #education .lang-level {
         font-size: 40px;
         font-weight: 400;
         align-self: end;
-        /* Align to the bottom of the content in its grid cell */
+        color: #D7A4C5;
         padding-bottom: 0.1em;
       }
 
-      /* END: Languages FIXES */
-
-      /* START: School Involvement FIXES */
       #education .involve-card {
-        background-color: #8c98cc;
-        /* Light blue background for the card */
+        background-color: #9DC1D9;
         padding: 30px 40px 30px 60px;
-        /* Padding for the box, more on the left for list items */
-        border-radius: 15px;
         margin-top: 40px;
-        /* Space from the School Involvement heading */
         position: relative;
       }
 
       #education .involve-card ul {
-        list-style-type: none;
-        /* Remove default browser bullet */
         padding-left: 0;
         margin: 0;
       }
 
       #education .involve-card li {
-        /* Pink color and spacing for list items */
         color: #DE3783;
-        font-size: 30px;
+        font-size: 33px;
         line-height: 1.6;
         position: relative;
         padding-left: 1.2em;
-        /* Space for the custom bullet */
       }
 
-      /* Custom list item bullet point */
-      #education .involve-card li::before {
-        content: "•";
-        /* Using a dot. You can use a custom character entity here if preferred */
-        color: #DE3783;
-        font-size: 40px;
-        position: absolute;
-        left: 0;
-        top: 0;
-        line-height: 1.2;
-      }
 
       /* ─────────────── FOOTER ─────────────── */
       footer {
@@ -566,13 +543,10 @@
 
         <!-- EDUCATION -->
         <div id="education">
-
           <div class="edu-top">
-
             <div class="edu-top-grid">
               <div>
                 <h2 class="edu-heading">Education</h2>
-
                 <div class="timeline-item">
                   <div class="meta-row">
                     <span class="meta-star">★</span>
@@ -581,7 +555,6 @@
                   <h3 class="timeline-title">Unionville High School</h3>
                   <p class="timeline-sub">High School Diploma</p>
                 </div>
-
                 <div class="timeline-item">
                   <div class="meta-row">
                     <span class="meta-star">★</span>
@@ -593,10 +566,8 @@
                   </p>
                 </div>
               </div>
-
               <div>
                 <h2 class="edu-heading">Software</h2>
-
                 <div class="software-list">
                   <div class="software-item">
                     <div class="software-badge">
@@ -606,7 +577,6 @@
                       <span class="star-on">★</span><span class="star-on">★</span><span class="star-on">★</span><span class="star-off">★</span><span class="star-off">★</span>
                     </div>
                   </div>
-
                   <div class="software-item">
                     <div class="software-badge">
                       <img src="ps.png" alt="Adobe Photoshop">
@@ -615,7 +585,6 @@
                       <span class="star-on">★</span><span class="star-on">★</span><span class="star-on">★</span><span class="star-on">★</span><span class="star-off">★</span>
                     </div>
                   </div>
-
                   <div class="software-item">
                     <div class="software-badge">
                       <img src="id.png" alt="Adobe InDesign">
@@ -624,7 +593,6 @@
                       <span class="star-on">★</span><span class="star-on">★</span><span class="star-off">★</span><span class="star-off">★</span><span class="star-off">★</span>
                     </div>
                   </div>
-
                   <div class="software-item">
                     <div class="software-badge">
                       <img src="figma.png" alt="Figma">
@@ -633,7 +601,6 @@
                       <span class="star-on">★</span><span class="star-on">★</span><span class="star-on">★</span><span class="star-off">★</span><span class="star-off">★</span>
                     </div>
                   </div>
-
                   <div class="software-item">
                     <div class="software-badge">
                       <img src="pr.png" alt="Adobe Premiere Pro">
@@ -645,10 +612,8 @@
                 </div>
               </div>
             </div>
-
             <div class="edu-exp">
               <h2 class="edu-heading">Experience</h2>
-
               <div class="exp-grid">
                 <div class="exp-col">
                   <div class="timeline-item">
@@ -659,7 +624,6 @@
                     <h3 class="timeline-title">Global Dental Centre</h3>
                     <p class="timeline-sub">Administrative Assistant</p>
                   </div>
-
                   <div class="timeline-item">
                     <div class="meta-row">
                       <div class="meta-star">★</div>
@@ -669,7 +633,6 @@
                     <p class="timeline-sub">Sales Cashier</p>
                   </div>
                 </div>
-
                 <div class="exp-col">
                   <div class="timeline-item">
                     <div class="meta-row">
@@ -679,7 +642,6 @@
                     <h3 class="timeline-title">M.Dance Studio</h3>
                     <p class="timeline-sub">Dance Instructor</p>
                   </div>
-
                   <div class="timeline-item">
                     <div class="meta-row">
                       <div class="meta-star">★</div>
@@ -694,7 +656,6 @@
           </div>
           <div class="edu-extras">
             <h2 class="extras-title">Extracurriculars</h2>
-
             <div class="extras-row">
               <div class="extra-item">
                 <div class="extra-icon">
@@ -702,14 +663,12 @@
                 </div>
                 <p class="extra-label">Drawing</p>
               </div>
-
               <div class="extra-item">
                 <div class="extra-icon">
                   <img src="singing.png" alt="Singing">
                 </div>
                 <p class="extra-label">Singing</p>
               </div>
-
               <div class="extra-item">
                 <div class="extra-icon">
                   <img src="dancing.png" alt="Dancing">
@@ -723,7 +682,6 @@
                 </div>
                 <p class="extra-label">Watching movies</p>
               </div>
-
               <div class="extra-item">
                 <div class="extra-icon">
                   <img src="swimming.png" alt="Swimming">
@@ -741,40 +699,33 @@
           </div>
           <div class="edu-bottom">
             <div class="bottom-grid">
-
               <div>
                 <h2 class="edu-heading">Languages</h2>
-
                 <div class="lang-list">
                   <div class="lang-item">
                     <div class="lang-name">中文</div>
                     <div class="lang-level">Fluent</div>
                   </div>
-
                   <div class="lang-item">
                     <div class="lang-name">English</div>
                     <div class="lang-level">Fluent</div>
                   </div>
-
                   <div class="lang-item">
                     <div class="lang-name">안녕</div>
                     <div class="lang-level">Beginner</div>
                   </div>
                 </div>
               </div>
-
               <div>
                 <h2 class="edu-heading">School Involvement</h2>
-
                 <div class="involve-card">
                   <ul>
-                    <li>Fashion for Change</li>
-                    <li>Haebeat Dance Crew</li>
-                    <li>Chinese Christian Fellowship</li>
+                    <li><strong>Fashion for Change</strong></li>
+                    <li><strong>Haebeat Dance Crew</strong></li>
+                    <li><strong>Chinese Christian Fellowship</strong></li>
                   </ul>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
