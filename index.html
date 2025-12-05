@@ -447,39 +447,37 @@
         font-size: 33px;
         line-height: 1.6;
         padding: 12px 0;
-        border-bottom: 2px solid rgba(36, 65, 150, 0.25);
       }
 
       #education .involve-list li:last-child {
         border-bottom: none;
       }
 
-      /* ===== SKILLS SECTION ===== */
+      /* ─────────────── SKILLS SECTION─────────────── */
       #skills {
         padding: 0;
+        background-color: transparent;
         min-height: auto;
-        background: none;
       }
 
-      /* Reuse your page width spacing feel */
-      #skills .skills-inner {
+      #skills .skills-top {
+        background-color: #9dc1d9;
+        color: #ffffff;
         padding: 60px 90px;
         position: relative;
+        /* FIXED for absolute children */
       }
 
-      /* Top (blue) area */
-      #skills .skills-top {
-        background-color: #244196;
-        color: #ffffff;
+      #skills .skills-inner {
+        margin: 0 auto;
       }
 
-      /* Title pill: "My Skills" */
+      /* FIXED: Merged two duplicate selectors into this single block */
       #skills .skills-title-pill {
         display: inline-flex;
         align-items: center;
         gap: 14px;
         background: #6F8FB9;
-        /* soft blue pill */
         border-radius: 999px;
         padding: 14px 28px;
       }
@@ -493,15 +491,8 @@
         line-height: 1;
       }
 
-      /* small sparkle icon placeholder */
-      #skills .skills-sparkle {
-        width: 42px;
-        height: 42px;
-        object-fit: contain;
-        display: block;
-      }
+      /* End of merged block */
 
-      /* big bubble graphic (image you upload) */
       #skills .skills-bubbles {
         margin-top: 45px;
         display: flex;
@@ -515,11 +506,12 @@
         display: block;
       }
 
-      /* decorative icons area (optional) */
       #skills .skills-decor {
         position: absolute;
-        right: 80px;
-        top: 80px;
+        right: 70px;
+        /* Adjusted slightly */
+        top: 70px;
+        /* Adjusted slightly */
       }
 
       #skills .skills-decor img {
@@ -531,9 +523,10 @@
       /* Bottom (beige) area */
       #skills .skills-bottom {
         background-color: #EDE8E2;
-        /* your beige */
+        /* Beige */
         color: #244196;
         position: relative;
+        padding: 60px 90px;
       }
 
       /* character image centered */
@@ -541,12 +534,11 @@
         display: flex;
         justify-content: center;
         margin-top: -25px;
-        /* pulls character up slightly like your screenshot */
+        /* pulls character up slightly */
       }
 
       #skills .skills-character img {
         width: 360px;
-        /* adjust to match your PNG */
         height: auto;
         display: block;
       }
@@ -603,7 +595,6 @@
         height: auto;
         display: block;
       }
-
 
       /* ─────────────── FOOTER ─────────────── */
       footer {
