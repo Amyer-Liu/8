@@ -233,44 +233,41 @@
         background-color: #244196;
         color: white;
         padding: 90px 90px 70px;
-        /* tighter + like ref */
       }
 
       #education .edu-top-grid {
         display: grid;
-        grid-template-columns: 1.2fr 0.8fr;
-        /* right column narrower like ref */
+        grid-template-columns: 60% 40%;
         gap: 64px;
-        /* smaller gap like ref */
         align-items: start;
       }
 
       #education .edu-heading {
         font-family: "Indie Flower", cursive;
         font-size: 72px;
-        /* closer to ref */
         letter-spacing: 1px;
         text-transform: uppercase;
-        margin: 0 0 28px 0;
+        margin: 0 0 40px 0;
         color: white;
         line-height: 1;
       }
 
       #education .timeline-item {
-        margin-bottom: 44px;
+        margin-bottom: 60px;
       }
 
       #education .meta-row {
         display: flex;
         align-items: center;
-        gap: 16px;
-        margin-bottom: 12px;
+        gap: 25px;
+        margin-bottom: 15px;
       }
 
       #education .meta-star {
         color: #DE3783;
-        font-size: 18px;
+        font-size: 60px;
         line-height: 1;
+        margin-top: -0.2em;
       }
 
       #education .meta-pill {
@@ -278,36 +275,34 @@
         padding: 10px 18px;
         border-radius: 999px;
         background: #5580B5;
-        font-size: 18px;
+        font-size: 30px;
       }
 
       #education .timeline-title {
         margin: 0 0 8px 0;
-        font-size: 30px;
-        font-weight: 800;
+        font-size: 35px;
+        font-weight: 500;
       }
 
       #education .timeline-sub {
         margin: 0;
-        font-size: 16px;
-        line-height: 1.35;
-        max-width: 520px;
+        font-size: 30px;
+        line-height: 1.5;
+        max-width: 600px;
       }
 
-      /* SOFTWARE — this is the main fix */
       #education .software-item {
         display: grid;
-        grid-template-columns: 66px 1fr;
-        /* NOT 50/50 → stars move close to badge */
+        grid-template-columns: 60px 40px;
         gap: 22px;
         align-items: center;
         margin: 26px 0;
       }
 
       #education .software-badge {
-        width: 56px;
-        height: 56px;
-        border-radius: 16px;
+        width: 70px;
+        height: 70px;
+        border-radius: 15px;
         background: #5580B5;
         display: flex;
         align-items: center;
@@ -315,28 +310,24 @@
       }
 
       #education .software-badge img {
-        width: 34px;
-        height: 34px;
+        width: 50px;
+        height: 50px;
         object-fit: contain;
         display: block;
       }
 
       #education .stars {
         justify-self: start;
-        /* keep stars near the icon */
-        font-size: 28px;
+        font-size: 60px;
         letter-spacing: 12px;
-        /* matches ref spacing */
         line-height: 1;
         color: #DE3783;
       }
 
-      /* remove the pink squares around empty stars */
       #education .star-off {
-        border: 0 !important;
+        color: #5580B5;
       }
 
-      /* EXPERIENCE spacing */
       #education .edu-exp {
         margin-top: 44px;
       }
@@ -345,7 +336,6 @@
         gap: 80px;
       }
 
-      /* EXTRACURRICULARS — tighter + centered like ref */
       #education .edu-extras {
         background-color: #E6D9C7;
         color: #244196;
@@ -362,9 +352,8 @@
 
       #education .extras-row {
         display: grid;
-        /* grid = consistent spacing */
-        grid-template-columns: repeat(6, 1fr);
-        gap: 18px;
+        grid-template-columns: 150px 150px 150px 150px 150px 150px;
+        gap: 25px;
         justify-items: center;
         align-items: start;
       }
@@ -378,9 +367,8 @@
       }
 
       #education .extra-icon img {
-        width: 96px;
-        /* bigger icons like ref */
-        height: 96px;
+        width: 150px;
+        height: 150px;
         object-fit: contain;
         display: block;
       }
@@ -389,13 +377,11 @@
         margin: 0;
         color: #DE3783;
         font-weight: 700;
-        font-size: 18px;
+        font-size: 30px;
         line-height: 1.15;
         max-width: 120px;
-        /* lets “Watching movies” wrap nicely */
       }
 
-      /* BOTTOM BLUE PANEL (optional small tuning) */
       #education .edu-bottom {
         background-color: #244196;
         color: white;
