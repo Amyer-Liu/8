@@ -431,24 +431,28 @@
 
       #education .involve-card {
         background-color: #9DC1D9;
-        padding: 30px 40px 30px 60px;
+        padding: 30px 40px;
         margin-top: 40px;
-        position: relative;
+        border-radius: 15px;
       }
 
-      #education .involve-card ul {
-        padding-left: 0;
+      #education .involve-list {
+        list-style: none;
+        padding: 0;
         margin: 0;
       }
 
-      #education .involve-card li {
+      #education .involve-list li {
         color: #DE3783;
         font-size: 33px;
         line-height: 1.6;
-        position: relative;
-        padding-left: 1.2em;
+        padding: 12px 0;
+        border-bottom: 2px solid rgba(36, 65, 150, 0.25);
       }
 
+      #education .involve-list li:last-child {
+        border-bottom: none;
+      }
 
       /* ─────────────── FOOTER ─────────────── */
       footer {
@@ -719,35 +723,36 @@
               <div>
                 <h2 class="edu-heading">School Involvement</h2>
                 <div class="involve-card">
-                  <ul>
-                    <li><strong>Fashion for Change</strong></li>
-                    <li><strong>Haebeat Dance Crew</strong></li>
-                    <li><strong>Chinese Christian Fellowship</strong></li>
+                  <ul class="involve-list">
+                    <li><strong>1. Fashion for Change</strong></li>
+                    <li><strong>2. Haebeat Dance Crew</strong></li>
+                    <li><strong>3. Christian Fellowship</strong></li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-        <!-- SKILLS -->
-        <div id="skills">
-          <h2>Skills</h2>
-          <p>Text-holder: I will add my skills content here later.</p>
-        </div>
-
-        <!-- PROJECTS -->
-        <div id="projects">
-          <h2>Projects</h2>
-          <p>Text-holder: I will add my projects content here later.</p>
-        </div>
-
-        <!-- FOOTER -->
-        <footer>
-          <h2 class="footer-name">Amy Liu</h2>
-          <p class="footer-copyright">© 2025 Amy Liu. All Rights Reserved.</p>
-        </footer>
       </div>
+
+      <!-- SKILLS -->
+      <div id="skills">
+        <h2>Skills</h2>
+        <p>Text-holder: I will add my skills content here later.</p>
+      </div>
+
+      <!-- PROJECTS -->
+      <div id="projects">
+        <h2>Projects</h2>
+        <p>Text-holder: I will add my projects content here later.</p>
+      </div>
+
+      <!-- FOOTER -->
+      <footer>
+        <h2 class="footer-name">Amy Liu</h2>
+        <p class="footer-copyright">© 2025 Amy Liu. All Rights Reserved.</p>
+      </footer>
+    </div>
     </div>
   </body>
 </html>
