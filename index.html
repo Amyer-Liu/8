@@ -241,18 +241,18 @@
       .edu-top {
         background-color: #244196;
         color: white;
-        padding: 70px 80px;
+        padding: 55px 80px 40px 80px;
       }
 
       .edu-top-grid {
         display: grid;
         grid-template-columns: 50% 50%;
-        gap: 90px;
-        align-items: start;
+        gap: 80px;
+        align-items: flex-start;
       }
 
       .timeline-item {
-        margin-bottom: 34px;
+        margin-bottom: 28px;
       }
 
       .meta-row {
@@ -270,7 +270,7 @@
 
       .meta-pill {
         display: inline-block;
-        padding: 6px 12px;
+        padding: 6px 16px;
         border-radius: 999px;
         background: #5580B5;
         font-size: 16px;
@@ -288,16 +288,17 @@
       }
 
       .software-list {
-        margin-top: 6px;
+        margin-top: 10px;
       }
 
       .software-item {
         display: grid;
         grid-template-columns: 50% 50%;
-        gap: 18px;
+        column-gap: 40px;
         align-items: center;
-        margin: 18px 0;
+        margin: 16px 0;
       }
+
 
       .software-badge {
         width: 54px;
@@ -316,19 +317,11 @@
         display: block;
       }
 
-      .extra-icon img {
-        width: 65px;
-        height: 65px;
-        object-fit: contain;
-        display: block;
-        margin: 0 auto;
-      }
-
-
       .stars {
         font-size: 22px;
         letter-spacing: 6px;
         line-height: 1;
+        text-align: right;
       }
 
       .star-on {
@@ -340,42 +333,52 @@
       }
 
       .edu-exp {
-        margin-top: 36px;
+        margin-top: 42px;
       }
 
       .exp-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 90px;
+        gap: 80px;
       }
 
+      /* Middle beige panel – shorter like poster */
       .edu-extras {
         background-color: #E6D9C7;
         color: #244196;
-        padding: 60px 80px 70px 80px;
+        padding: 35px 80px 50px 80px;
         text-align: center;
       }
 
       .extras-title {
         font-family: "Indie Flower", cursive;
         font-size: 48px;
-        margin: 10px 0 24px 0;
+        margin: 6px 0 18px 0;
       }
 
       .extras-row {
         display: flex;
         justify-content: space-between;
         gap: 22px;
+        margin-top: 26px;
       }
 
       .extra-item {
-        width: 150px;
+        width: 130px;
         text-align: center;
       }
 
       .extra-icon {
-        height: 60px;
+        height: 70px;
         margin-bottom: 10px;
+      }
+
+      .extra-icon img {
+        width: 65px;
+        height: 65px;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto;
       }
 
       .extra-label {
@@ -385,21 +388,22 @@
         font-size: 15px;
       }
 
+      /* Bottom blue panel – Languages + Involvement */
       .edu-bottom {
         background-color: #244196;
         color: white;
-        padding: 70px 80px;
+        padding: 55px 80px 65px 80px;
       }
 
       .bottom-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 90px;
-        align-items: start;
+        gap: 110px;
+        align-items: flex-start;
       }
 
       .lang-list {
-        margin-top: 10px;
+        margin-top: 32px;
       }
 
       .lang-item {
@@ -407,11 +411,12 @@
         grid-template-columns: 160px 1fr;
         gap: 22px;
         align-items: center;
-        margin: 24px 0;
+        margin: 22px 0;
       }
 
       .lang-name {
-        font-size: 42px;
+        font-size: 56px;
+        /* bigger, like the reference */
         font-weight: 800;
       }
 
@@ -421,7 +426,7 @@
       }
 
       .involve-card {
-        margin-top: 12px;
+        margin-top: 32px;
         background-color: #9DC1D9;
         border-radius: 16px;
         padding: 26px 26px;
@@ -561,41 +566,51 @@
                 </div>
               </div>
 
-              <!-- RIGHT: SOFTWARE -->
+              <!-- RIGHT: SOFTWARE (IMAGES) -->
               <div>
                 <h2 class="edu-heading">Software</h2>
 
                 <div class="software-list">
                   <div class="software-item">
-                    <div class="software-badge">Ai</div>
+                    <div class="software-badge">
+                      <img src="ai.png" alt="Adobe Illustrator">
+                    </div>
                     <div class="stars">
                       <span class="star-on">★</span><span class="star-on">★</span><span class="star-on">★</span><span class="star-off">★</span><span class="star-off">★</span>
                     </div>
                   </div>
 
                   <div class="software-item">
-                    <div class="software-badge">Ps</div>
+                    <div class="software-badge">
+                      <img src="ps.png" alt="Adobe Photoshop">
+                    </div>
                     <div class="stars">
                       <span class="star-on">★</span><span class="star-on">★</span><span class="star-on">★</span><span class="star-on">★</span><span class="star-off">★</span>
                     </div>
                   </div>
 
                   <div class="software-item">
-                    <div class="software-badge">Id</div>
+                    <div class="software-badge">
+                      <img src="id.png" alt="Adobe InDesign">
+                    </div>
                     <div class="stars">
                       <span class="star-on">★</span><span class="star-on">★</span><span class="star-off">★</span><span class="star-off">★</span><span class="star-off">★</span>
                     </div>
                   </div>
 
                   <div class="software-item">
-                    <div class="software-badge">F</div>
+                    <div class="software-badge">
+                      <img src="figma.png" alt="Figma">
+                    </div>
                     <div class="stars">
                       <span class="star-on">★</span><span class="star-on">★</span><span class="star-on">★</span><span class="star-off">★</span><span class="star-off">★</span>
                     </div>
                   </div>
 
                   <div class="software-item">
-                    <div class="software-badge">Pr</div>
+                    <div class="software-badge">
+                      <img src="pr.png" alt="Adobe Premiere Pro">
+                    </div>
                     <div class="stars">
                       <span class="star-on">★</span><span class="star-on">★</span><span class="star-off">★</span><span class="star-off">★</span><span class="star-off">★</span>
                     </div>
@@ -652,60 +667,53 @@
                 </div>
               </div>
             </div>
-
-            <!-- Optional: decorative line art on bottom-right -->
-            <!-- TODO: Put your pink decorative image here (position it absolute if you want) -->
-
           </div>
           <!-- ================= END TOP BLUE PANEL ================= -->
 
 
           <!-- ================= MIDDLE BEIGE PANEL ================= -->
           <div class="edu-extras">
-            <!-- Optional: decorative divider icons -->
-            <!-- TODO: Put your small blue doodle divider image here -->
-
             <h2 class="extras-title">Extracurriculars</h2>
 
             <div class="extras-row">
               <div class="extra-item">
                 <div class="extra-icon">
-                  <!-- TODO: Drawing icon image -->
+                  <img src="drawing.png" alt="Drawing">
                 </div>
                 <p class="extra-label">Drawing</p>
               </div>
 
               <div class="extra-item">
                 <div class="extra-icon">
-                  <!-- TODO: Singing icon image -->
+                  <img src="singing.png" alt="Singing">
                 </div>
                 <p class="extra-label">Singing</p>
               </div>
 
               <div class="extra-item">
                 <div class="extra-icon">
-                  <!-- TODO: Dancing icon image -->
+                  <img src="dancing.png" alt="Dancing">
                 </div>
                 <p class="extra-label">Dancing</p>
               </div>
 
               <div class="extra-item">
                 <div class="extra-icon">
-                  <!-- TODO: Watching movies icon image -->
+                  <img src="laptop.png" alt="Watching movies">
                 </div>
                 <p class="extra-label">Watching movies</p>
               </div>
 
               <div class="extra-item">
                 <div class="extra-icon">
-                  <!-- TODO: Swimming icon image -->
+                  <img src="swimming.png" alt="Swimming">
                 </div>
                 <p class="extra-label">Swimming</p>
               </div>
 
               <div class="extra-item">
                 <div class="extra-icon">
-                  <!-- TODO: Playing tennis icon image -->
+                  <img src="tennis.png" alt="Playing tennis">
                 </div>
                 <p class="extra-label">Playing tennis</p>
               </div>
@@ -744,9 +752,6 @@
               <div>
                 <h2 class="edu-heading">School Involvement</h2>
 
-                <!-- Optional: open book illustration -->
-                <!-- TODO: Put your open-book pink illustration image here -->
-
                 <div class="involve-card">
                   <ul>
                     <li>Fashion for Change</li>
@@ -754,9 +759,6 @@
                     <li>Chinese Christian Fellowship</li>
                   </ul>
                 </div>
-
-                <!-- Optional: music notes / plus signs decoration -->
-                <!-- TODO: Put your small pink music/plus icons here -->
               </div>
 
             </div>
