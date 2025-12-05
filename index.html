@@ -225,13 +225,10 @@
       /* ─────────────── EDUCATION─────────────── */
       #education {
         padding: 0;
-        /* we control spacing inside blocks */
         min-height: auto;
         background: none;
-        /* blocks inside have their own backgrounds */
       }
 
-      /* BIG headings like the screenshot */
       .edu-heading {
         font-family: "Indie Flower", cursive;
         font-size: 56px;
@@ -241,7 +238,6 @@
         color: white;
       }
 
-      /* ---------- TOP BLUE PANEL ---------- */
       .edu-top {
         background-color: #244196;
         color: white;
@@ -250,13 +246,11 @@
 
       .edu-top-grid {
         display: grid;
-        grid-template-columns: 1.2fr 0.9fr;
-        /* left = education, right = software */
+        grid-template-columns: 50% 50%;
         gap: 90px;
         align-items: start;
       }
 
-      /* timeline item layout (education + experience) */
       .timeline-item {
         margin-bottom: 34px;
       }
@@ -278,8 +272,7 @@
         display: inline-block;
         padding: 6px 12px;
         border-radius: 999px;
-        background: rgba(255, 255, 255, 0.18);
-        border: 1px solid rgba(255, 255, 255, 0.22);
+        background: #5580B5;
         font-size: 16px;
       }
 
@@ -292,17 +285,15 @@
       .timeline-sub {
         margin: 0;
         font-size: 15px;
-        opacity: 0.9;
       }
 
-      /* ---------- SOFTWARE (right column) ---------- */
       .software-list {
         margin-top: 6px;
       }
 
       .software-item {
         display: grid;
-        grid-template-columns: 54px 1fr;
+        grid-template-columns: 50% 50%;
         gap: 18px;
         align-items: center;
         margin: 18px 0;
@@ -312,16 +303,28 @@
         width: 54px;
         height: 44px;
         border-radius: 12px;
-        background: rgba(255, 255, 255, 0.18);
-        border: 1px solid rgba(255, 255, 255, 0.22);
+        background: #5580B5;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-weight: 800;
-        letter-spacing: 0.5px;
       }
 
-      /* stars */
+      .software-badge img {
+        width: 28px;
+        height: 28px;
+        object-fit: contain;
+        display: block;
+      }
+
+      .extra-icon img {
+        width: 65px;
+        height: 65px;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto;
+      }
+
+
       .stars {
         font-size: 22px;
         letter-spacing: 6px;
@@ -333,10 +336,9 @@
       }
 
       .star-off {
-        color: rgba(255, 255, 255, 0.35);
+        border: 1px solid #DE3783;
       }
 
-      /* ---------- EXPERIENCE (still in top blue panel) ---------- */
       .edu-exp {
         margin-top: 36px;
       }
@@ -347,7 +349,6 @@
         gap: 90px;
       }
 
-      /* ---------- MIDDLE BEIGE PANEL (Extracurriculars) ---------- */
       .edu-extras {
         background-color: #E6D9C7;
         color: #244196;
@@ -365,8 +366,6 @@
         display: flex;
         justify-content: space-between;
         gap: 22px;
-        flex-wrap: wrap;
-        /* in case screen is smaller */
       }
 
       .extra-item {
@@ -377,7 +376,6 @@
       .extra-icon {
         height: 60px;
         margin-bottom: 10px;
-        /* Image goes here later */
       }
 
       .extra-label {
@@ -387,7 +385,6 @@
         font-size: 15px;
       }
 
-      /* ---------- BOTTOM BLUE PANEL (Languages + School Involvement) ---------- */
       .edu-bottom {
         background-color: #244196;
         color: white;
@@ -401,7 +398,6 @@
         align-items: start;
       }
 
-      /* Languages rows */
       .lang-list {
         margin-top: 10px;
       }
@@ -424,11 +420,9 @@
         opacity: 0.9;
       }
 
-      /* School involvement card */
       .involve-card {
         margin-top: 12px;
-        background-color: rgba(255, 255, 255, 0.18);
-        border: 1px solid rgba(255, 255, 255, 0.22);
+        background-color: #9DC1D9;
         border-radius: 16px;
         padding: 26px 26px;
       }
@@ -788,7 +782,6 @@
           <h2 class="footer-name">Amy Liu</h2>
           <p class="footer-copyright">© 2025 Amy Liu. All Rights Reserved.</p>
         </footer>
-
       </div>
     </div>
   </body>
