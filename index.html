@@ -229,218 +229,194 @@
         background: none;
       }
 
-      .edu-heading {
-        font-family: "Indie Flower", cursive;
-        font-size: 56px;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        margin: 0 0 22px 0;
-        color: white;
-      }
-
-      .edu-top {
+      #education .edu-top {
         background-color: #244196;
         color: white;
-        padding: 55px 80px 40px 80px;
+        padding: 90px 90px 70px;
+        /* tighter + like ref */
       }
 
-      .edu-top-grid {
+      #education .edu-top-grid {
         display: grid;
-        grid-template-columns: 50% 50%;
-        gap: 80px;
-        align-items: flex-start;
+        grid-template-columns: 1.2fr 0.8fr;
+        /* right column narrower like ref */
+        gap: 64px;
+        /* smaller gap like ref */
+        align-items: start;
       }
 
-      .timeline-item {
-        margin-bottom: 28px;
-      }
-
-      .meta-row {
-        display: flex;
-        align-items: center;
-        gap: 14px;
-        margin-bottom: 10px;
-      }
-
-      .meta-star {
-        color: #DE3783;
-        font-size: 22px;
+      #education .edu-heading {
+        font-family: "Indie Flower", cursive;
+        font-size: 72px;
+        /* closer to ref */
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin: 0 0 28px 0;
+        color: white;
         line-height: 1;
       }
 
-      .meta-pill {
+      #education .timeline-item {
+        margin-bottom: 44px;
+      }
+
+      #education .meta-row {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 12px;
+      }
+
+      #education .meta-star {
+        color: #DE3783;
+        font-size: 18px;
+        line-height: 1;
+      }
+
+      #education .meta-pill {
         display: inline-block;
-        padding: 6px 16px;
+        padding: 10px 18px;
         border-radius: 999px;
         background: #5580B5;
-        font-size: 16px;
+        font-size: 18px;
       }
 
-      .timeline-title {
-        margin: 0 0 6px 0;
-        font-size: 24px;
-        font-weight: 700;
+      #education .timeline-title {
+        margin: 0 0 8px 0;
+        font-size: 30px;
+        font-weight: 800;
       }
 
-      .timeline-sub {
+      #education .timeline-sub {
         margin: 0;
-        font-size: 15px;
+        font-size: 16px;
+        line-height: 1.35;
+        max-width: 520px;
       }
 
-      .software-list {
-        margin-top: 10px;
-      }
-
-      .software-item {
+      /* SOFTWARE — this is the main fix */
+      #education .software-item {
         display: grid;
-        grid-template-columns: 50% 50%;
-        column-gap: 40px;
+        grid-template-columns: 66px 1fr;
+        /* NOT 50/50 → stars move close to badge */
+        gap: 22px;
         align-items: center;
-        margin: 16px 0;
+        margin: 26px 0;
       }
 
-
-      .software-badge {
-        width: 54px;
-        height: 44px;
-        border-radius: 12px;
+      #education .software-badge {
+        width: 56px;
+        height: 56px;
+        border-radius: 16px;
         background: #5580B5;
         display: flex;
         align-items: center;
         justify-content: center;
       }
 
-      .software-badge img {
-        width: 28px;
-        height: 28px;
+      #education .software-badge img {
+        width: 34px;
+        height: 34px;
         object-fit: contain;
         display: block;
       }
 
-      .stars {
-        font-size: 22px;
-        letter-spacing: 6px;
+      #education .stars {
+        justify-self: start;
+        /* keep stars near the icon */
+        font-size: 28px;
+        letter-spacing: 12px;
+        /* matches ref spacing */
         line-height: 1;
-        text-align: right;
-      }
-
-      .star-on {
         color: #DE3783;
       }
 
-      .star-off {
-        border: 1px solid #DE3783;
+      /* remove the pink squares around empty stars */
+      #education .star-off {
+        border: 0 !important;
       }
 
-      .edu-exp {
-        margin-top: 42px;
+      /* EXPERIENCE spacing */
+      #education .edu-exp {
+        margin-top: 44px;
       }
 
-      .exp-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+      #education .exp-grid {
         gap: 80px;
       }
 
-      /* Middle beige panel – shorter like poster */
-      .edu-extras {
+      /* EXTRACURRICULARS — tighter + centered like ref */
+      #education .edu-extras {
         background-color: #E6D9C7;
         color: #244196;
-        padding: 35px 80px 50px 80px;
+        padding: 48px 90px 54px;
         text-align: center;
       }
 
-      .extras-title {
+      #education .extras-title {
         font-family: "Indie Flower", cursive;
-        font-size: 48px;
-        margin: 6px 0 18px 0;
+        font-size: 56px;
+        margin: 0 0 34px 0;
+        color: #244196;
       }
 
-      .extras-row {
-        display: flex;
-        justify-content: space-between;
-        gap: 22px;
-        margin-top: 26px;
+      #education .extras-row {
+        display: grid;
+        /* grid = consistent spacing */
+        grid-template-columns: repeat(6, 1fr);
+        gap: 18px;
+        justify-items: center;
+        align-items: start;
       }
 
-      .extra-item {
-        width: 130px;
-        text-align: center;
+      #education .extra-item {
+        width: auto;
       }
 
-      .extra-icon {
-        height: 70px;
-        margin-bottom: 10px;
+      #education .extra-icon {
+        margin-bottom: 14px;
       }
 
-      .extra-icon img {
-        width: 65px;
-        height: 65px;
+      #education .extra-icon img {
+        width: 96px;
+        /* bigger icons like ref */
+        height: 96px;
         object-fit: contain;
         display: block;
-        margin: 0 auto;
       }
 
-      .extra-label {
+      #education .extra-label {
         margin: 0;
         color: #DE3783;
         font-weight: 700;
-        font-size: 15px;
+        font-size: 18px;
+        line-height: 1.15;
+        max-width: 120px;
+        /* lets “Watching movies” wrap nicely */
       }
 
-      /* Bottom blue panel – Languages + Involvement */
-      .edu-bottom {
+      /* BOTTOM BLUE PANEL (optional small tuning) */
+      #education .edu-bottom {
         background-color: #244196;
         color: white;
-        padding: 55px 80px 65px 80px;
+        padding: 76px 90px;
       }
 
-      .bottom-grid {
+      #education .bottom-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 110px;
-        align-items: flex-start;
+        grid-template-columns: 0.95fr 1.05fr;
+        gap: 70px;
+        align-items: start;
       }
 
-      .lang-list {
-        margin-top: 32px;
+      #education .lang-item {
+        grid-template-columns: 150px 1fr;
+        margin: 28px 0;
       }
 
-      .lang-item {
-        display: grid;
-        grid-template-columns: 160px 1fr;
-        gap: 22px;
-        align-items: center;
-        margin: 22px 0;
-      }
-
-      .lang-name {
-        font-size: 56px;
-        /* bigger, like the reference */
-        font-weight: 800;
-      }
-
-      .lang-level {
-        font-size: 18px;
-        opacity: 0.9;
-      }
-
-      .involve-card {
-        margin-top: 32px;
-        background-color: #9DC1D9;
-        border-radius: 16px;
-        padding: 26px 26px;
-      }
-
-      .involve-card ul {
-        margin: 0;
-        padding-left: 20px;
-      }
-
-      .involve-card li {
-        margin: 14px 0;
-        color: #DE3783;
-        font-weight: 700;
+      #education .lang-name {
+        font-size: 46px;
+        font-weight: 900;
       }
 
       /* ─────────────── FOOTER ─────────────── */
