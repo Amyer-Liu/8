@@ -640,24 +640,28 @@
       .cards-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
+        gap: 25px;
         margin-bottom: 40px;
       }
 
       .card-placeholder {
-        background-color: #E6D9C7;
-        border-radius: 15px;
-        padding: 20px;
-        min-height: 350px;
+        background-color: white;
+        padding: 0;
+        min-height: 300px;
         display: flex;
         align-items: center;
         justify-content: center;
+        overflow: visible;
       }
 
       #projects .card-placeholder img {
         width: 100%;
         height: 100%;
-        object-fit: contain;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+        object-position: center;
+        display: block;
       }
 
       .ingredient-section {
@@ -1145,27 +1149,27 @@
 
                   <!-- Row 2 -->
                   <div class="ingredient-card-placeholder">
-                    <img src="topping-ingredient-card.jpg" alt="Topping Ingredient Card">
+                    <img src="topping.png" alt="Topping Ingredient Card">
                   </div>
                   <div class="ingredient-card-placeholder">
-                    <img src="bacon-card.jpg" alt="Bacon Card">
+                    <img src="bacon.png" alt="Bacon Card">
                   </div>
                   <div class="ingredient-card-placeholder">
-                    <img src="pickles-card.jpg" alt="Pickles Card">
+                    <img src="pickles.png" alt="Pickles Card">
                   </div>
                   <div class="ingredient-card-placeholder">
-                    <img src="cheese-card.jpg" alt="Cheese Card">
+                    <img src="cheese.png" alt="Cheese Card">
                   </div>
                   <div class="ingredient-card-placeholder">
-                    <img src="onion-card.jpg" alt="Onion Card">
+                    <img src="onion.png" alt="Onion Card">
                   </div>
 
                   <!-- Row 3 -->
                   <div class="ingredient-card-placeholder">
-                    <img src="tomato-card.jpg" alt="Tomato Card">
+                    <img src="tomato.png" alt="Tomato Card">
                   </div>
                   <div class="ingredient-card-placeholder">
-                    <img src="lettuce-card.jpg" alt="Lettuce Card">
+                    <img src="lettuce.png" alt="Lettuce Card">
                   </div>
                 </div>
               </div>
