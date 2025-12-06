@@ -599,58 +599,34 @@
         background-color: #ffffff;
       }
 
-      .project-title-wrapper {
+      #projects .project-title-wrapper {
         text-align: center;
         margin-bottom: 40px;
       }
 
-      .project-title {
-        font-family: "Indie Flower", cursive;
-        font-size: 70px;
-        color: #244196;
-        margin: 0;
-        display: inline-block;
-        position: relative;
-        padding: 0 80px;
-      }
-
-      .title-decoration {
-        position: absolute;
-        color: #DE3783;
-        font-size: 40px;
-      }
-
-      .title-decoration.star-left {
-        left: 0;
-        top: -10px;
-      }
-
-      .title-decoration.star-right {
-        right: 0;
-        top: -10px;
-      }
-
-      .title-decoration.swirl {
-        right: -40px;
-        bottom: -20px;
-        font-size: 50px;
+      #projects .project-title-img {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        margin-top: -7em;
       }
 
       .project-subtitle {
         font-family: "Indie Flower", cursive;
         font-size: 45px;
         color: #DE3783;
-        margin: 30px 0 20px 0;
+        margin: -30px 0 20px 0;
       }
 
       .project-description {
-        font-size: 24px;
+        font-size: 25px;
         line-height: 1.8;
         color: #244196;
         margin-bottom: 40px;
+        margin-top: -0.2em;
       }
 
-      /* Card Display Grid */
       .cards-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -666,7 +642,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        overflow: hidden;
       }
 
       #projects .card-placeholder img {
@@ -675,7 +650,6 @@
         object-fit: contain;
       }
 
-      /* Ingredient Cards */
       .ingredient-section {
         margin: 50px 0;
       }
@@ -706,7 +680,6 @@
         object-fit: contain;
       }
 
-      /* My Role Section */
       .role-section {
         background-color: #ffffff;
         padding: 40px;
@@ -725,14 +698,6 @@
         font-size: 22px;
         line-height: 1.8;
         color: #244196;
-      }
-
-      /* Website Redesign Styles */
-      .website-title {
-        font-family: "Indie Flower", cursive;
-        font-size: 80px;
-        color: #244196;
-        margin: 0;
       }
 
       .screenshots-grid {
@@ -764,7 +729,6 @@
         min-height: 600px;
       }
 
-      /* Changes Section */
       .changes-section {
         background-color: #F5F0EB;
         padding: 50px;
@@ -783,6 +747,19 @@
         font-size: 24px;
         line-height: 1.9;
         color: #244196;
+      }
+
+      .project-footer {
+        text-align: center;
+        padding: 40px 0;
+        font-family: "Indie Flower", cursive;
+        font-size: 50px;
+        color: #244196;
+      }
+
+      .footer-decoration {
+        color: #DE3783;
+        margin: 0 20px;
       }
 
 
@@ -1124,13 +1101,10 @@
 
         <!-- PROJECTS SECTION -->
         <div id="projects">
+          <!-- BURGER OPS PROJECT -->
           <section class="project-detail-section burger-ops">
             <div class="project-title-wrapper">
-              <h2 class="project-title">
-                <span class="title-decoration star-left">★</span>
-                Burger Ops
-                <span class="title-decoration star-right">★</span>
-              </h2>
+              <img class="project-title-img" src="Burger.png" width="900" height="300" alt="Burger Ops">
             </div>
 
             <h3 class="project-subtitle">What is Burger Ops</h3>
@@ -1226,11 +1200,7 @@
           <!-- WEBSITE REDESIGN PROJECT -->
           <section class="project-detail-section website-redesign">
             <div class="project-title-wrapper">
-              <h2 class="website-title">
-                <span class="title-decoration star-left">★</span>
-                Website Redesign
-                <span class="title-decoration swirl">~</span>
-              </h2>
+              <img class="project-title-img" src="website.png" width="900" height="300" alt="Website Redesign">
             </div>
 
             <h3 class="project-subtitle">Why needs redesign</h3>
@@ -1267,12 +1237,6 @@
                 simplified, making key information easier to find and improving overall usability
                 and consistency.
               </p>
-            </div>
-
-            <div class="project-footer">
-              <span class="footer-decoration">✿</span>
-              Amy Liu
-              <span class="footer-decoration">✿</span>
             </div>
           </section>
         </div>
