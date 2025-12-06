@@ -580,6 +580,212 @@
         background: #244196;
       }
 
+      /* ─────────────── PROJECTS SECTION─────────────── */
+      #projects {
+        background-color: #ffffff;
+        padding: 0;
+        min-height: auto;
+      }
+
+      .project-detail-section {
+        padding: 60px 90px;
+      }
+
+      .project-detail-section.burger-ops {
+        background-color: #F5F0EB;
+      }
+
+      .project-detail-section.website-redesign {
+        background-color: #ffffff;
+      }
+
+      .project-title-wrapper {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .project-title {
+        font-family: "Indie Flower", cursive;
+        font-size: 70px;
+        color: #244196;
+        margin: 0;
+        display: inline-block;
+        position: relative;
+        padding: 0 80px;
+      }
+
+      .title-decoration {
+        position: absolute;
+        color: #DE3783;
+        font-size: 40px;
+      }
+
+      .title-decoration.star-left {
+        left: 0;
+        top: -10px;
+      }
+
+      .title-decoration.star-right {
+        right: 0;
+        top: -10px;
+      }
+
+      .title-decoration.swirl {
+        right: -40px;
+        bottom: -20px;
+        font-size: 50px;
+      }
+
+      .project-subtitle {
+        font-family: "Indie Flower", cursive;
+        font-size: 45px;
+        color: #DE3783;
+        margin: 30px 0 20px 0;
+      }
+
+      .project-description {
+        font-size: 24px;
+        line-height: 1.8;
+        color: #244196;
+        margin-bottom: 40px;
+      }
+
+      /* Card Display Grid */
+      .cards-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        margin: 40px 0;
+      }
+
+      .card-placeholder {
+        background-color: #E6D9C7;
+        border-radius: 15px;
+        padding: 20px;
+        min-height: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
+
+      #projects .card-placeholder img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+
+      /* Ingredient Cards */
+      .ingredient-section {
+        margin: 50px 0;
+      }
+
+      .ingredient-cards-wrapper {
+        display: flex;
+        gap: 25px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 30px 0;
+      }
+
+      .ingredient-card-placeholder {
+        width: 180px;
+        height: 250px;
+        background-color: #E6D9C7;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
+
+
+      #projects .ingredient-card-placeholder img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+
+      /* My Role Section */
+      .role-section {
+        background-color: #ffffff;
+        padding: 40px;
+        border-radius: 20px;
+        margin: 40px 0;
+      }
+
+      .role-title {
+        font-family: "Indie Flower", cursive;
+        font-size: 50px;
+        color: #244196;
+        margin: 0 0 20px 0;
+      }
+
+      .role-description {
+        font-size: 22px;
+        line-height: 1.8;
+        color: #244196;
+      }
+
+      /* Website Redesign Styles */
+      .website-title {
+        font-family: "Indie Flower", cursive;
+        font-size: 80px;
+        color: #244196;
+        margin: 0;
+      }
+
+      .screenshots-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        margin: 40px 0;
+      }
+
+      .screenshot-placeholder {
+        background-color: #F5F0EB;
+        border-radius: 15px;
+        padding: 15px;
+        min-height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
+
+      #projects .screenshot-placeholder img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+
+      .screenshot-placeholder.full-width {
+        grid-column: 1 / -1;
+        min-height: 600px;
+      }
+
+      /* Changes Section */
+      .changes-section {
+        background-color: #F5F0EB;
+        padding: 50px;
+        border-radius: 20px;
+        margin: 50px 0;
+      }
+
+      .changes-title {
+        font-family: "Indie Flower", cursive;
+        font-size: 55px;
+        color: #DE3783;
+        margin: 0 0 30px 0;
+      }
+
+      .changes-text {
+        font-size: 24px;
+        line-height: 1.9;
+        color: #244196;
+      }
+
+
       /* ─────────────── FOOTER ─────────────── */
       footer {
         text-align: center;
@@ -912,6 +1118,161 @@
                 <div class="whyme-divider2"></div>
                 <div class="whyme-divider"></div>
               </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- PROJECTS SECTION -->
+        <div id="projects">
+          <section class="project-detail-section burger-ops">
+            <div class="project-title-wrapper">
+              <h2 class="project-title">
+                <span class="title-decoration star-left">★</span>
+                Burger Ops
+                <span class="title-decoration star-right">★</span>
+              </h2>
+            </div>
+
+            <h3 class="project-subtitle">What is Burger Ops</h3>
+            <p class="project-description">
+              Burger Ops is a discussion-based card game that simulates real fast-food industry
+              challenges during supply chain disruptions. Players act as managers racing to assemble
+              their signature burgers while navigating obstacles, debating solutions, and managing
+              limited resources.
+            </p>
+
+            <!-- Main Card Types -->
+            <div class="cards-grid">
+              <div class="card-placeholder">
+                <img src="core-card.jpg" alt="Core Ingredient Card">
+              </div>
+              <div class="card-placeholder">
+                <img src="order-card.jpg" alt="Order Card">
+              </div>
+              <div class="card-placeholder">
+                <img src="shipment-card.jpg" alt="Shipment Card">
+              </div>
+            </div>
+
+            <!-- Ingredient Cards -->
+            <div class="ingredient-section">
+              <h3 class="project-subtitle">Card Types</h3>
+              <p class="project-description">
+                The game uses five card types to guide problem-solving, strategic trading, and
+                ingredient collection. The first player to complete their burger earns the
+                "Manager of the Year" title.
+              </p>
+
+              <!-- Sauce Cards Row -->
+              <div class="ingredient-cards-wrapper">
+                <div class="ingredient-card-placeholder">
+                  <img src="sauce-card.jpg" alt="Sauce Ingredient Card">
+                </div>
+                <div class="ingredient-card-placeholder">
+                  <img src="ketchup-card.jpg" alt="Ketchup Card">
+                </div>
+                <div class="ingredient-card-placeholder">
+                  <img src="mayo-card.jpg" alt="Mayo Card">
+                </div>
+                <div class="ingredient-card-placeholder">
+                  <img src="mustard-card.jpg" alt="Mustard Card">
+                </div>
+                <div class="ingredient-card-placeholder">
+                  <img src="relish-card.jpg" alt="Relish Card">
+                </div>
+              </div>
+
+              <!-- Topping Cards Row -->
+              <div class="ingredient-cards-wrapper">
+                <div class="ingredient-card-placeholder">
+                  <img src="topping-card.jpg" alt="Topping Ingredient Card">
+                </div>
+                <div class="ingredient-card-placeholder">
+                  <img src="bacon-card.jpg" alt="Bacon Card">
+                </div>
+                <div class="ingredient-card-placeholder">
+                  <img src="pickles-card.jpg" alt="Pickles Card">
+                </div>
+                <div class="ingredient-card-placeholder">
+                  <img src="cheese-card.jpg" alt="Cheese Card">
+                </div>
+                <div class="ingredient-card-placeholder">
+                  <img src="onion-card.jpg" alt="Onion Card">
+                </div>
+              </div>
+
+              <!-- Vegetable Cards Row -->
+              <div class="ingredient-cards-wrapper">
+                <div class="ingredient-card-placeholder">
+                  <img src="tomato-card.jpg" alt="Tomato Card">
+                </div>
+                <div class="ingredient-card-placeholder">
+                  <img src="lettuce-card.jpg" alt="Lettuce Card">
+                </div>
+              </div>
+            </div>
+
+            <!-- My Role -->
+            <div class="role-section">
+              <h3 class="role-title">My Role</h3>
+              <p class="role-description">
+                As part of a group project, I designed the core game mechanics, rule system, and
+                card structure. The game encourages critical thinking, teamwork, and adaptive
+                decision-making, reflecting key service design principles in an engaging format.
+              </p>
+            </div>
+          </section>
+
+          <!-- WEBSITE REDESIGN PROJECT -->
+          <section class="project-detail-section website-redesign">
+            <div class="project-title-wrapper">
+              <h2 class="website-title">
+                <span class="title-decoration star-left">★</span>
+                Website Redesign
+                <span class="title-decoration swirl">~</span>
+              </h2>
+            </div>
+
+            <h3 class="project-subtitle">Why needs redesign</h3>
+            <p class="project-description">
+              The original Purple Bubble Tea website needed a redesign because its visuals were
+              flat and inconsistent, the content lacked personality and clarity, and the navigation
+              was confusing for users. Important information was difficult to read, interactive
+              elements were unclear, and the overall design failed to reflect the brand's warmth
+              or identity. A redesign was necessary to improve flow, usability, and brand trust.
+            </p>
+
+            <!-- Website Screenshots -->
+            <div class="screenshots-grid">
+              <div class="screenshot-placeholder">
+                <img src="website-screenshot-1.jpg" alt="Website Screenshot 1">
+              </div>
+              <div class="screenshot-placeholder">
+                <img src="website-screenshot-2.jpg" alt="Website Screenshot 2">
+              </div>
+              <div class="screenshot-placeholder full-width">
+                <img src="website-screenshot-full.jpg" alt="Full Website Screenshot">
+              </div>
+            </div>
+
+            <!-- What Changed -->
+            <div class="changes-section">
+              <h3 class="changes-title">What changed</h3>
+              <p class="changes-text">
+                The redesigned website introduces a warmer colour palette, improved typography, and
+                clearer visual hierarchy to enhance readability and brand warmth. Layouts were
+                reorganized for clarity, including a structured timetable for store hours and a more
+                visible contact form. High-quality product images and more personable, brand-focused
+                content strengthen storytelling and credibility. Navigation and interactivity were
+                simplified, making key information easier to find and improving overall usability
+                and consistency.
+              </p>
+            </div>
+
+            <div class="project-footer">
+              <span class="footer-decoration">✿</span>
+              Amy Liu
+              <span class="footer-decoration">✿</span>
             </div>
           </section>
         </div>
