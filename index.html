@@ -588,7 +588,7 @@
       }
 
       .project-detail-section {
-        padding: 60px 90px;
+        padding: 60px 0;
       }
 
       .project-detail-section.burger-ops {
@@ -616,22 +616,24 @@
         font-family: "Indie Flower", cursive;
         font-size: 45px;
         color: #DE3783;
-        margin: -30px 0 20px 0;
+        margin: 0 0 20px 0;
+        padding-left: 50px;
       }
 
       .project-description {
         font-size: 25px;
-        line-height: 1.8;
+        line-height: 1.5;
         color: #244196;
         margin-bottom: 40px;
         margin-top: -0.2em;
+        padding-left: 90px;
+        max-width: 1000px;
       }
 
       .all-cards-wrapper {
         background-color: #ffffff;
         padding: 40px;
-        border-radius: 20px;
-        margin: 40px auto;
+        margin: 0;
         max-width: 1200px;
       }
 
@@ -707,7 +709,6 @@
         color: #244196;
       }
 
-      /* WHITE BACKGROUND FOR SCREENSHOTS SECTION */
       .screenshots-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -759,19 +760,6 @@
         font-size: 24px;
         line-height: 1.9;
         color: #244196;
-      }
-
-      .project-footer {
-        text-align: center;
-        padding: 40px 0;
-        font-family: "Indie Flower", cursive;
-        font-size: 50px;
-        color: #244196;
-      }
-
-      .footer-decoration {
-        color: #DE3783;
-        margin: 0 20px;
       }
 
       /* ─────────────── FOOTER ─────────────── */
@@ -1112,92 +1100,84 @@
 
         <!-- PROJECTS SECTION -->
         <div id="projects">
-          <!-- BURGER OPS PROJECT -->
           <section class="project-detail-section burger-ops">
             <div class="project-title-wrapper">
               <img class="project-title-img" src="Burger.png" width="900" height="300" alt="Burger Ops">
             </div>
 
-            <h3 class="project-subtitle">What is Burger Ops</h3>
+            <h2 class="project-subtitle">What is Burger Ops</h2>
             <p class="project-description">
-              Burger Ops is a discussion-based card game that simulates real fast-food industry
-              challenges during supply chain disruptions. Players act as managers racing to assemble
-              their signature burgers while navigating obstacles, debating solutions, and managing
-              limited resources.
+              Burger Ops is a discussion-based card game that simulates real fast-food industry challenges during supply chain disruptions. Players act as managers racing to assemble their signature burgers while navigating obstacles, debating solutions, and managing limited resources.
             </p>
 
             <!-- Main Card Types -->
-            <div class="cards-grid">
-              <div class="card-placeholder">
-                <img src="core-card.jpg" alt="Core Ingredient Card">
+            <div class="all-cards-wrapper">
+              <div class="cards-grid">
+                <div class="card-placeholder">
+                  <img src="core-card.jpg" alt="Core Ingredient Card">
+                </div>
+                <div class="card-placeholder">
+                  <img src="order-card.jpg" alt="Order Card">
+                </div>
+                <div class="card-placeholder">
+                  <img src="shipment-card.jpg" alt="Shipment Card">
+                </div>
               </div>
-              <div class="card-placeholder">
-                <img src="order-card.jpg" alt="Order Card">
-              </div>
-              <div class="card-placeholder">
-                <img src="shipment-card.jpg" alt="Shipment Card">
+
+              <div class="ingredient-section">
+                <div class="ingredient-cards-wrapper">
+                  <!-- Row 1 -->
+                  <div class="ingredient-card-placeholder">
+                    <img src="sauce-ingredient-card.jpg" alt="Sauce Ingredient Card">
+                  </div>
+                  <div class="ingredient-card-placeholder">
+                    <img src="ketchup-card.jpg" alt="Ketchup Card">
+                  </div>
+                  <div class="ingredient-card-placeholder">
+                    <img src="mayo-card.jpg" alt="Mayo Card">
+                  </div>
+                  <div class="ingredient-card-placeholder">
+                    <img src="mustard-card.jpg" alt="Mustard Card">
+                  </div>
+                  <div class="ingredient-card-placeholder">
+                    <img src="relish-card.jpg" alt="Relish Card">
+                  </div>
+
+                  <!-- Row 2 -->
+                  <div class="ingredient-card-placeholder">
+                    <img src="topping-ingredient-card.jpg" alt="Topping Ingredient Card">
+                  </div>
+                  <div class="ingredient-card-placeholder">
+                    <img src="bacon-card.jpg" alt="Bacon Card">
+                  </div>
+                  <div class="ingredient-card-placeholder">
+                    <img src="pickles-card.jpg" alt="Pickles Card">
+                  </div>
+                  <div class="ingredient-card-placeholder">
+                    <img src="cheese-card.jpg" alt="Cheese Card">
+                  </div>
+                  <div class="ingredient-card-placeholder">
+                    <img src="onion-card.jpg" alt="Onion Card">
+                  </div>
+
+                  <!-- Row 3 -->
+                  <div class="ingredient-card-placeholder">
+                    <img src="tomato-card.jpg" alt="Tomato Card">
+                  </div>
+                  <div class="ingredient-card-placeholder">
+                    <img src="lettuce-card.jpg" alt="Lettuce Card">
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div class="ingredient-section">
-
-              <!-- Sauce Cards Row -->
-              <div class="ingredient-cards-wrapper">
-                <div class="ingredient-card-placeholder">
-                  <img src="sauce-card.jpg" alt="Sauce Ingredient Card">
-                </div>
-                <div class="ingredient-card-placeholder">
-                  <img src="ketchup-card.jpg" alt="Ketchup Card">
-                </div>
-                <div class="ingredient-card-placeholder">
-                  <img src="mayo-card.jpg" alt="Mayo Card">
-                </div>
-                <div class="ingredient-card-placeholder">
-                  <img src="mustard-card.jpg" alt="Mustard Card">
-                </div>
-                <div class="ingredient-card-placeholder">
-                  <img src="relish-card.jpg" alt="Relish Card">
-                </div>
-              </div>
-
-              <!-- Topping Cards Row -->
-              <div class="ingredient-cards-wrapper">
-                <div class="ingredient-card-placeholder">
-                  <img src="topping-card.jpg" alt="Topping Ingredient Card">
-                </div>
-                <div class="ingredient-card-placeholder">
-                  <img src="bacon-card.jpg" alt="Bacon Card">
-                </div>
-                <div class="ingredient-card-placeholder">
-                  <img src="pickles-card.jpg" alt="Pickles Card">
-                </div>
-                <div class="ingredient-card-placeholder">
-                  <img src="cheese-card.jpg" alt="Cheese Card">
-                </div>
-                <div class="ingredient-card-placeholder">
-                  <img src="onion-card.jpg" alt="Onion Card">
-                </div>
-              </div>
-
-              <!-- Vegetable Cards Row -->
-              <div class="ingredient-cards-wrapper">
-                <div class="ingredient-card-placeholder">
-                  <img src="tomato-card.jpg" alt="Tomato Card">
-                </div>
-                <div class="ingredient-card-placeholder">
-                  <img src="lettuce-card.jpg" alt="Lettuce Card">
-                </div>
-              </div>
-
-              <!-- TEXT GOES BELOW ALL CARD IMAGES -->
-              <h3 class="project-subtitle">Card Types</h3>
-              <p class="project-description">
-                The game uses five card types to guide problem-solving, strategic trading, and
-                ingredient collection. The first player to complete their burger earns the
-                "Manager of the Year" title.
-              </p>
-
-            </div>
+            <!-- TEXT GOES BELOW ALL CARD IMAGES -->
+            <h3 class="project-subtitle">Card Types</h3>
+            <p class="project-description">
+              The game uses five card types to guide problem-solving, strategic trading, and
+              ingredient collection. The first player to complete their burger earns the
+              "Manager of the Year" title.
+            </p>
 
             <!-- My Role -->
             <div class="role-section">
