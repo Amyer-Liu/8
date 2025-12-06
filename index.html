@@ -428,21 +428,17 @@
         padding-bottom: 0.1em;
       }
 
-      #education .involve-card {
+      #education .involve-table {
         background-color: #9DC1D9;
-        padding: 30px 40px;
         margin-top: 40px;
         border-radius: 15px;
+        width: 100%;
+        border-collapse: collapse;
+        overflow: hidden;
       }
 
-      #education .involve-list {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
-
-      #education .involve-list li {
-        padding: 12px 0;
+      #education .involve-table td {
+        padding: 30px 40px;
         border-bottom: 1px solid #244196;
         color: #DE3783;
         font-size: 33px;
@@ -450,7 +446,7 @@
         font-weight: 700;
       }
 
-      #education .involve-list li:last-child {
+      #education .involve-table tr:last-child td {
         border-bottom: none;
       }
 
@@ -865,17 +861,23 @@
 
               <div>
                 <h2 class="edu-heading">School Involvement</h2>
-                <div class="involve-card">
-                  <ul class="involve-list">
-                    <li><strong>1. Fashion for Change</strong></li>
-                    <li><strong>2. Haebeat Dance Crew</strong></li>
-                    <li><strong>3. Christian Fellowship</strong></li>
-                  </ul>
-                </div>
+                <!-- 🔧 FIX #4: Replaced div.involve-card with table -->
+                <table class="involve-table">
+                  <tr>
+                    <td><strong>1. Fashion for Change</strong></td>
+                  </tr>
+                  <tr>
+                    <td><strong>2. Haebeat Dance Crew</strong></td>
+                  </tr>
+                  <tr>
+                    <td><strong>3. Christian Fellowship</strong></td>
+                  </tr>
+                </table>
               </div>
             </div>
           </div>
         </div>
+
 
         <!-- SKILLS -->
         <div id="skills">
