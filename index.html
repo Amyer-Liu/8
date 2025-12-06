@@ -715,31 +715,31 @@
 
       .screenshots-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: 30px;
-        margin: 40px auto;
+        width: 100%;
+        margin: 40px 0;
         background-color: #ffffff;
-        padding: 40px;
         border-radius: 20px;
-        max-width: 1200px;
+        padding: 0;
+        overflow: hidden;
       }
 
       .screenshot-placeholder {
         background-color: #F5F0EB;
-        border-radius: 15px;
-        padding: 15px;
+        border-radius: 0;
+        padding: 0;
+        /* IMPORTANT: no inset so image can fill */
         min-height: 500px;
+
         display: flex;
         align-items: center;
         justify-content: center;
+
         overflow: hidden;
+        /* IMPORTANT: prevents image spilling */
       }
 
-      #projects .screenshot-placeholder img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-      }
 
       .screenshot-placeholder.full-width {
         grid-column: 1 / -1;
