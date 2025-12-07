@@ -734,23 +734,89 @@
         background: #F5F0EB;
         border-radius: 18px;
         overflow: hidden;
-        /* keeps rounded corners */
         margin: 0 0 25px;
-        /* spacing between cards */
         break-inside: avoid;
-        /* prevents splitting */
       }
 
-      /* IMPORTANT: correct selector + no forced height + no crop */
       #projects .screenshot-placeholder img {
         width: 100%;
         height: auto !important;
-        /* stop height:100% rules */
         display: block;
         object-fit: contain !important;
-        /* stop cover cropping */
       }
 
+      #project.screenshots-wrapper {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto 50px;
+        background: #fff;
+        padding: 40px;
+        box-sizing: border-box;
+        border-radius: 20px;
+      }
+
+      #project.screenshots-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+        align-items: start;
+      }
+
+      #project.screenshot-placeholder {
+        background: #F5F0EB;
+        border-radius: 18px;
+        overflow: hidden;
+      }
+
+      /* FIX selector: #projects (not #project) */
+      #projects.screenshot-placeholder img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .screenshot-text-card {
+        background: #F5F0EB;
+        border-radius: 18px;
+        padding: 26px 28px;
+        box-sizing: border-box;
+      }
+
+      .screenshot-text-card.bottom-right {
+        grid-column: 2;
+      }
+
+      .screenshot-text-card h4 {
+        font-family: "Indie Flower", cursive;
+        font-size: 40px;
+        color: #DE3783;
+        margin: 0 0 12px 0;
+      }
+
+      .screenshot-text-card ul {
+        margin: 0;
+        padding-left: 20px;
+        font-size: 22px;
+        line-height: 1.7;
+        color: #244196;
+      }
+
+      #projects .screenshots-wrapper .screenshot-text-card a {
+        display: inline-block;
+        margin-top: 16px;
+        color: #DE3783;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 600;
+        transition: color 0.2s ease;
+      }
+
+      #project.screenshot-text-card a:hover {
+        color: #244196;
+        text-decoration: underline;
+      }
+
+      /* What Changed Section - UPDATED */
       .changes-section {
         background-color: #F5F0EB;
         padding: 50px;
@@ -772,7 +838,6 @@
         max-width: 1000px;
         margin-left: 50px;
         margin-top: -1em;
-
       }
 
       /* ─────────────── FOOTER ─────────────── */
@@ -1140,46 +1205,22 @@
               <div class="ingredient-section">
                 <div class="ingredient-cards-wrapper">
                   <!-- Row 1 -->
-                  <div class="ingredient-card-placeholder">
-                    <img src="sauce.png" alt="Sauce Ingredient Card">
-                  </div>
-                  <div class="ingredient-card-placeholder">
-                    <img src="ketchup.png" alt="Ketchup Card">
-                  </div>
-                  <div class="ingredient-card-placeholder">
-                    <img src="mayo.png" alt="Mayo Card">
-                  </div>
-                  <div class="ingredient-card-placeholder">
-                    <img src="mustard.png" alt="Mustard Card">
-                  </div>
-                  <div class="ingredient-card-placeholder">
-                    <img src="relish.png" alt="Relish Card">
-                  </div>
+                  <div class="ingredient-card-placeholder"><img src="sauce.png" alt="Sauce Ingredient Card"></div>
+                  <div class="ingredient-card-placeholder"><img src="ketchup.png" alt="Ketchup Card"></div>
+                  <div class="ingredient-card-placeholder"><img src="mayo.png" alt="Mayo Card"></div>
+                  <div class="ingredient-card-placeholder"><img src="mustard.png" alt="Mustard Card"></div>
+                  <div class="ingredient-card-placeholder"><img src="relish.png" alt="Relish Card"></div>
 
                   <!-- Row 2 -->
-                  <div class="ingredient-card-placeholder">
-                    <img src="topping.png" alt="Topping Ingredient Card">
-                  </div>
-                  <div class="ingredient-card-placeholder">
-                    <img src="bacon.png" alt="Bacon Card">
-                  </div>
-                  <div class="ingredient-card-placeholder">
-                    <img src="pickles.png" alt="Pickles Card">
-                  </div>
-                  <div class="ingredient-card-placeholder">
-                    <img src="cheese.png" alt="Cheese Card">
-                  </div>
-                  <div class="ingredient-card-placeholder">
-                    <img src="onion.png" alt="Onion Card">
-                  </div>
+                  <div class="ingredient-card-placeholder"><img src="topping.png" alt="Topping Ingredient Card"></div>
+                  <div class="ingredient-card-placeholder"><img src="bacon.png" alt="Bacon Card"></div>
+                  <div class="ingredient-card-placeholder"><img src="pickles.png" alt="Pickles Card"></div>
+                  <div class="ingredient-card-placeholder"><img src="cheese.png" alt="Cheese Card"></div>
+                  <div class="ingredient-card-placeholder"><img src="onion.png" alt="Onion Card"></div>
 
                   <!-- Row 3 -->
-                  <div class="ingredient-card-placeholder">
-                    <img src="tomato.png" alt="Tomato Card">
-                  </div>
-                  <div class="ingredient-card-placeholder">
-                    <img src="lettuce.png" alt="Lettuce Card">
-                  </div>
+                  <div class="ingredient-card-placeholder"><img src="tomato.png" alt="Tomato Card"></div>
+                  <div class="ingredient-card-placeholder"><img src="lettuce.png" alt="Lettuce Card"></div>
                 </div>
               </div>
             </div>
@@ -1187,18 +1228,17 @@
             <!-- TEXT GOES BELOW ALL CARD IMAGES -->
             <h3 class="project-subtitle">Card Types</h3>
             <p class="project-description">
-              The game uses five card types to guide problem-solving, strategic trading, and
-              ingredient collection. The first player to complete their burger earns the
-              "Manager of the Year" title.
+              The game uses five card types to guide problem-solving, strategic trading, and ingredient collection.
+              The first player to complete their burger earns the "Manager of the Year" title.
             </p>
 
             <!-- My Role -->
             <div class="role-section">
               <h3 class="role-title">My Role</h3>
               <p class="role-description">
-                As part of a group project, I designed the core game mechanics, rule system, and
-                card structure. The game encourages critical thinking, teamwork, and adaptive
-                decision-making, reflecting key service design principles in an engaging format.
+                As part of a group project, I designed the core game mechanics, rule system, and card structure.
+                The game encourages critical thinking, teamwork, and adaptive decision-making, reflecting key service
+                design principles in an engaging format.
               </p>
             </div>
 
@@ -1210,11 +1250,10 @@
 
               <h3 class="project-subtitle">Why needs redesign</h3>
               <p class="project-description">
-                The original Purple Bubble Tea website needed a redesign because its visuals were
-                flat and inconsistent, the content lacked personality and clarity, and the navigation
-                was confusing for users. Important information was difficult to read, interactive
-                elements were unclear, and the overall design failed to reflect the brand's warmth
-                or identity. A redesign was necessary to improve flow, usability, and brand trust.
+                The original Purple Bubble Tea website needed a redesign because its visuals were flat and inconsistent,
+                the content lacked personality and clarity, and the navigation was confusing for users. Important information
+                was difficult to read, interactive elements were unclear, and the overall design failed to reflect the brand's
+                warmth or identity. A redesign was necessary to improve flow, usability, and brand trust.
               </p>
 
               <!-- Website Screenshots -->
@@ -1224,6 +1263,19 @@
                   <div class="screenshot-placeholder"><img src="w2.png" alt="Website Screenshot 2"></div>
                   <div class="screenshot-placeholder"><img src="w3.png" alt="Website Screenshot 3"></div>
                   <div class="screenshot-placeholder"><img src="w4.png" alt="Website Screenshot 4"></div>
+
+                  <div class="screenshot-text-card">
+                    <h4>Main Problems Identified</h4>
+                    <ul>
+                      <li>Visual style felt inconsistent</li>
+                      <li>Hierarchy wasn't clear</li>
+                      <li>Navigation and page flow were confusing</li>
+                      <li>Readability issues</li>
+                    </ul>
+                    <a href="https://www.purplebubble.ca/" target="_blank" rel="noopener noreferrer">
+                      Visit Purple Bubble (View the original website)
+                    </a>
+                  </div>
                 </div>
               </div>
 
@@ -1240,14 +1292,17 @@
                   and consistency.
                 </p>
               </div>
-            </section>
-        </div>
+            </section> <!-- closes website-redesign -->
+
+          </section> <!-- closes burger-ops -->
+        </div> <!-- closes #projects -->
 
         <!-- FOOTER -->
         <footer>
           <h2 class="footer-name">Amy Liu</h2>
           <p class="footer-copyright">© 2025 Amy Liu. All Rights Reserved.</p>
         </footer>
+
       </div>
     </div>
   </body>
