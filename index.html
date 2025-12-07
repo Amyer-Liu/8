@@ -716,19 +716,33 @@
       }
 
       .screenshots-wrapper {
-        width: 100%;
         max-width: 1200px;
-        box-sizing: border-box;
-        background: #ffffff;
-        padding: 40px;
+        width: 100%;
         margin: 0 auto 50px;
+        background: #fff;
+        padding: 40px;
+        box-sizing: border-box;
+        border-radius: 20px;
       }
 
       .screenshots-grid {
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: repeat(2, 1fr);
         gap: 25px;
-        margin: 0;
+      }
+
+      .screenshot-placeholder {
+        background: #F5F0EB;
+        border-radius: 18px;
+        overflow: hidden;
+        aspect-ratio: 4 / 3;
+      }
+
+      #project.screenshot-placeholder img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
       }
 
       .changes-section {
@@ -1200,15 +1214,10 @@
               <!-- Website Screenshots -->
               <div class="screenshots-wrapper">
                 <div class="screenshots-grid">
-                  <div class="screenshot-placeholder">
-                    <img src="w1.png" alt="Website Screenshot 1">
-                  </div>
-                  <div class="screenshot-placeholder">
-                    <img src="w2.png" alt="Website Screenshot 2">
-                  </div>
-                  <div class="screenshot-placeholder full-width">
-                    <img src="w3.png" alt="Full Website Screenshot">
-                  </div>
+                  <div class="screenshot-placeholder"><img src="w1.png" alt="Website Screenshot 1"></div>
+                  <div class="screenshot-placeholder"><img src="w2.png" alt="Website Screenshot 2"></div>
+                  <div class="screenshot-placeholder"><img src="w3.png" alt="Website Screenshot 3"></div>
+                  <div class="screenshot-placeholder"><img src="w4.png" alt="Website Screenshot 4"></div>
                 </div>
               </div>
 
