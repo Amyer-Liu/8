@@ -2,10 +2,11 @@
 <html lang="en-CA">
   <head>
     <meta charset="UTF-8">
-    <title>Assignment 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amy Liu - Portfolio</title>
     <!-- Created by Amy Liu on 2025 Dec 3 -->
 
-    <!-- Google Fonts - Inconsolata + Indie FLower -->
+    <!-- Google Fonts - Inconsolata + Indie Flower -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Indie+Flower&display=swap" rel="stylesheet">
@@ -106,11 +107,15 @@
       }
 
       #education,
-      #skills,
-      #projects {
+      #skills {
         background-color: #ede8e2;
         color: #244196;
         padding: 60px 80px;
+      }
+
+      #projects {
+        background-color: #ffffff;
+        padding: 0;
       }
 
       /* ─────────────── HOME:ABOUT ME SECTION ─────────────── */
@@ -493,7 +498,6 @@
       #skills {
         padding: 0;
         position: relative;
-
       }
 
       #skills .skills-top {
@@ -597,19 +601,11 @@
       }
 
       /* ─────────────── PROJECTS SECTION─────────────── */
-      #projects {
-        background-color: #ffffff;
-        padding: 0;
-      }
-
       .project-detail-section {
         padding: 60px 0;
       }
 
-      .project-detail-section.burger-ops {
-        background-color: #F5F0EB;
-      }
-
+      .project-detail-section.burger-ops,
       .project-detail-section.website-redesign {
         background-color: #f5f0eb;
       }
@@ -621,17 +617,16 @@
 
       #projects .project-title-img {
         display: block;
-        margin: 0 auto;
         width: 100%;
         height: auto;
-        margin-top: -5em;
+        margin: -5em auto 0;
       }
 
       .project-subtitle {
         font-family: "Indie Flower", cursive;
         font-size: 45px;
         color: #de3783;
-        margin: 20px 0 20px 60px;
+        margin: 20px 0 20px 65px;
       }
 
       .project-description {
@@ -690,7 +685,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        overflow: visible;
       }
 
       #projects .ingredient-card-placeholder img {
@@ -719,86 +713,86 @@
         margin: -1em 0 0 1.1em;
       }
 
-      #projects .screenshots-wrapper {
+      #projects .redesign-wrapper {
         max-width: 1200px;
         width: 100%;
         margin: 0 auto 50px;
-        background: #fff;
+        background: white;
         padding: 40px;
         box-sizing: border-box;
       }
 
-      #projects .screenshots-grid {
+      #projects .redesign-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 25px;
         align-items: start;
       }
 
-      #projects .screenshot-placeholder {
+      #projects .preview-card {
         background: #F5F0EB;
         border-radius: 18px;
-        overflow: hidden;
       }
 
-      #projects .screenshot-placeholder img {
+      #projects .preview-card img {
         width: 100%;
         height: auto;
         display: block;
       }
 
-      #projects .shots-col {
+      #projects .redesign-col {
         display: flex;
         flex-direction: column;
         gap: 25px;
       }
 
-      .screenshot-text-card {
+      #projects .problem-card {
         background: #F5F0EB;
+        border-radius: 18px;
         padding: 26px 28px;
         box-sizing: border-box;
       }
 
-      .screenshot-text-card h4 {
+      #projects .problem-card h4 {
         font-family: "Indie Flower", cursive;
-        font-size: 40px;
-        color: #DE3783;
+        font-size: 35px;
+        color: #de3783;
         margin: 0 0 20px 0;
       }
 
-      .screenshot-text-card ul {
+      #projects .problem-card ul {
         margin: 0;
         padding-left: 20px;
-        font-size: 22px;
-        line-height: 1.7;
+        font-size: 25px;
+        line-height: 1.6;
         color: #244196;
       }
 
-      #projects .screenshots-wrapper .screenshot-text-card a {
+      #projects .problem-card a {
         display: inline-block;
         margin-top: 16px;
-        color: #DE3783;
+        color: #de3783;
         text-decoration: none;
         font-size: 20px;
         font-weight: 600;
         transition: color 0.2s ease;
       }
 
-      #projects .screenshot-text-card a:hover {
+      #projects .problem-card a:hover {
         color: #244196;
         text-decoration: underline;
       }
 
       .changes-section {
-        background-color: #F5F0EB;
+        background-color: #f5f0eb;
         padding: 50px;
-        margin: 0 0 -8em 0;
+        margin: 0 0 -3em 0;
       }
 
       .changes-title {
         font-family: "Indie Flower", cursive;
-        font-size: 60px;
-        color: #DE3783;
+        font-size: 45px;
+        color: #de3783;
         margin: -60px 0 30px 10px;
       }
 
@@ -807,9 +801,7 @@
         line-height: 1.6;
         color: #244196;
         max-width: 1000px;
-        margin-left: 50px;
-        margin-top: -1em;
-        margin-bottom: 4em;
+        margin: 0 0 60px 50px;
       }
 
       /* ─────────────── FOOTER ─────────────── */
@@ -848,7 +840,7 @@
         <!-- NAV -->
         <nav>
           <div class="logo">
-            <img src="Logo.PNG" width="120" height="120" alt="Amy Liu logo">
+            <img src="Logo.PNG" width="120" height="120" alt="Logo designed by Amy">
           </div>
           <a href="#home">Home</a>
           <a href="#education">Education</a>
@@ -857,10 +849,10 @@
         </nav>
 
         <!-- HOME:ABOUT ME -->
-        <div id="home">
+        <section id="home">
           <div class="about-container">
             <div class="left-column">
-              <img src="Profile.jpg" width="480" height="640" alt="Profile photo of myself">
+              <img src="Profile.jpg" width="480" height="640" alt="A profile picture of myself">
               <div class="contact-box">
                 <h3>Contact Me =)</h3>
                 <p><strong>Email:</strong> <a href="mailto:a383liu@uwaterloo.ca">a383liu@uwaterloo.ca</a></p>
@@ -869,15 +861,10 @@
             </div>
             <div class="right-column">
               <h1>About Me</h1>
-              <p> As a junior designer, I believe meaningful digital experiences begin with
-                understanding people. I'm passionate about creating intuitive, human-centered
-                interfaces that make users feel supported and empowered.</p>
-              <p>Having lived in three different countries, I've been shaped by diverse cultures
-                and ways of communicating. This global perspective fuels my curiosity and empathy
-                as a designer. I love exploring cultural behaviors and design traditions around
-                the world, then weaving those insights into inclusive, thoughtful digital experiences.</p>
-              <img class="about-character" src="dec1.png" alt="Decorative character">
-              <img class="about-dec" src="scribble1.png" alt="Decorative element">
+              <p>As a junior designer, I believe meaningful digital experiences begin with understanding people. I'm passionate about creating intuitive, human-centred interfaces that make users feel supported and empowered.</p>
+              <p>Having lived in three different countries, I've been shaped by diverse cultures and ways of communicating. This global perspective fuels my curiosity and empathy as a designer. I love exploring cultural behaviours and design traditions around the world, then weaving those insights into inclusive, thoughtful, and culturally aware digital experiences.</p>
+              <img class="about-character" src="dec1.png" alt="Decorative cartoon character">
+              <img class="about-dec" src="scribble1.png" alt="Decorative sparkle element">
             </div>
           </div>
 
@@ -887,30 +874,30 @@
             <div class="project-row">
               <a href="#burger-ops" class="project-card">
                 <div class="project-frame">
-                  <img src="design1.PNG" width="600" height="600" alt="Burger Ops card game design">
+                  <img src="design1.PNG" width="600" height="600" alt="Burger Ops card game project">
                 </div>
                 <p class="project-name">Card Game Design</p>
               </a>
 
               <a href="#website-redesign" class="project-card">
                 <div class="project-frame">
-                  <img src="design2.PNG" width="800" height="450" alt="Purple Bubble Tea website redesign">
+                  <img src="design2.PNG" width="800" height="450" alt="Purple Bubble Tea website redesign project">
                 </div>
                 <p class="project-name">Website Redesign</p>
               </a>
 
               <a href="#poster-design" class="project-card">
                 <div class="project-frame">
-                  <img src="design3.PNG" width="600" height="900" alt="GBDA 101 poster design">
+                  <img src="design3.PNG" width="600" height="900" alt="GBDA 101 poster design project">
                 </div>
                 <p class="project-name">Poster Design</p>
               </a>
             </div>
           </div>
-        </div>
+        </section>
 
         <!-- EDUCATION -->
-        <div id="education">
+        <section id="education">
           <div class="edu-top">
             <div class="edu-top-grid">
               <div>
@@ -939,39 +926,38 @@
 
               <div>
                 <h2 class="edu-heading">Software</h2>
-                <div class="software-list">
-                  <div class="software-item">
-                    <div class="software-badge"><img src="ai.png" alt="Adobe Illustrator"></div>
-                    <div class="stars">
-                      <span class="star-on">★</span><span class="star-on">★</span><span class="star-on">★</span><span class="star-off">★</span><span class="star-off">★</span>
-                    </div>
+                <div class="software-item">
+                  <div class="software-badge"><img src="ai.png" alt="Adobe Illustrator"></div>
+                  <div class="stars">
+                    <span class="star-on">★</span><span class="star-on">★</span><span class="star-on">★</span><span class="star-off">★</span><span class="star-off">★</span>
                   </div>
+                </div>
 
-                  <div class="software-item">
-                    <div class="software-badge"><img src="ps.png" alt="Adobe Photoshop"></div>
-                    <div class="stars">
-                      <span class="star-on">★</span><span class="star-on">★</span><span class="star-on">★</span><span class="star-on">★</span><span class="star-off">★</span>
-                    </div>
+                <div class="software-item">
+                  <div class="software-badge"><img src="ps.png" alt="Adobe Photoshop"></div>
+                  <div class="stars">
+                    <span class="star-on">★</span><span class="star-on">★</span><span class="star-on">★</span><span class="star-on">★</span><span class="star-off">★</span>
                   </div>
-                  <div class="software-item">
-                    <div class="software-badge"><img src="id.png" alt="Adobe InDesign"></div>
-                    <div class="stars">
-                      <span class="star-on">★</span><span class="star-on">★</span><span class="star-off">★</span><span class="star-off">★</span><span class="star-off">★</span>
-                    </div>
-                  </div>
+                </div>
 
-                  <div class="software-item">
-                    <div class="software-badge"><img src="figma.png" alt="Figma"></div>
-                    <div class="stars">
-                      <span class="star-on">★</span><span class="star-on">★</span><span class="star-on">★</span><span class="star-off">★</span><span class="star-off">★</span>
-                    </div>
+                <div class="software-item">
+                  <div class="software-badge"><img src="id.png" alt="Adobe InDesign"></div>
+                  <div class="stars">
+                    <span class="star-on">★</span><span class="star-on">★</span><span class="star-off">★</span><span class="star-off">★</span><span class="star-off">★</span>
                   </div>
+                </div>
 
-                  <div class="software-item">
-                    <div class="software-badge"><img src="pr.png" alt="Adobe Premiere Pro"></div>
-                    <div class="stars">
-                      <span class="star-on">★</span><span class="star-on">★</span><span class="star-off">★</span><span class="star-off">★</span><span class="star-off">★</span>
-                    </div>
+                <div class="software-item">
+                  <div class="software-badge"><img src="figma.png" alt="Figma"></div>
+                  <div class="stars">
+                    <span class="star-on">★</span><span class="star-on">★</span><span class="star-on">★</span><span class="star-off">★</span><span class="star-off">★</span>
+                  </div>
+                </div>
+
+                <div class="software-item">
+                  <div class="software-badge"><img src="pr.png" alt="Adobe Premiere Pro"></div>
+                  <div class="stars">
+                    <span class="star-on">★</span><span class="star-on">★</span><span class="star-off">★</span><span class="star-off">★</span><span class="star-off">★</span>
                   </div>
                 </div>
               </div>
@@ -980,11 +966,11 @@
             <div class="edu-exp">
               <h2 class="edu-heading">Experience</h2>
               <div class="exp-grid">
-                <div class="exp-col">
+                <div>
                   <div class="timeline-item">
                     <div class="meta-row">
-                      <div class="meta-star">★</div>
-                      <div class="meta-pill">2021 - 2022</div>
+                      <span class="meta-star">★</span>
+                      <span class="meta-pill">2021 - 2022</span>
                     </div>
                     <h3 class="timeline-title">Global Dental Centre</h3>
                     <p class="timeline-sub">Administrative Assistant</p>
@@ -992,19 +978,19 @@
 
                   <div class="timeline-item">
                     <div class="meta-row">
-                      <div class="meta-star">★</div>
-                      <div class="meta-pill">2022 - 2022</div>
+                      <span class="meta-star">★</span>
+                      <span class="meta-pill">2022 - 2022</span>
                     </div>
                     <h3 class="timeline-title">Eggette Hut</h3>
                     <p class="timeline-sub">Sales Cashier</p>
                   </div>
                 </div>
 
-                <div class="exp-col">
+                <div>
                   <div class="timeline-item">
                     <div class="meta-row">
-                      <div class="meta-star">★</div>
-                      <div class="meta-pill">2023 - 2024</div>
+                      <span class="meta-star">★</span>
+                      <span class="meta-pill">2023 - 2024</span>
                     </div>
                     <h3 class="timeline-title">M.Dance Studio</h3>
                     <p class="timeline-sub">Dance Instructor</p>
@@ -1012,8 +998,8 @@
 
                   <div class="timeline-item">
                     <div class="meta-row">
-                      <div class="meta-star">★</div>
-                      <div class="meta-pill">2025 - 2025</div>
+                      <span class="meta-star">★</span>
+                      <span class="meta-pill">2025 - 2025</span>
                     </div>
                     <h3 class="timeline-title">3Dz Dance Studio</h3>
                     <p class="timeline-sub">Dance Instructor</p>
@@ -1027,32 +1013,32 @@
             <h2 class="extras-title">Extracurriculars</h2>
             <div class="extras-row">
               <div class="extra-item">
-                <div class="extra-icon"><img src="drawing.png" alt="Drawing"></div>
+                <div class="extra-icon"><img src="drawing.png" alt="Drawing icon"></div>
                 <p class="extra-label">Drawing</p>
               </div>
 
               <div class="extra-item">
-                <div class="extra-icon"><img src="singing.png" alt="Singing"></div>
+                <div class="extra-icon"><img src="singing.png" alt="Singing icon"></div>
                 <p class="extra-label">Singing</p>
               </div>
 
               <div class="extra-item">
-                <div class="extra-icon"><img src="dancing.png" alt="Dancing"></div>
+                <div class="extra-icon"><img src="dancing.png" alt="Dancing icon"></div>
                 <p class="extra-label">Dancing</p>
               </div>
 
               <div class="extra-item">
-                <div class="extra-icon"><img src="laptop.png" alt="Watching movies"></div>
+                <div class="extra-icon"><img src="laptop.png" alt="Movie watching icon"></div>
                 <p class="extra-label">Watching movies</p>
               </div>
 
               <div class="extra-item">
-                <div class="extra-icon"><img src="swimming.png" alt="Swimming"></div>
+                <div class="extra-icon"><img src="swimming.png" alt="Swimming icon"></div>
                 <p class="extra-label">Swimming</p>
               </div>
 
               <div class="extra-item">
-                <div class="extra-icon"><img src="tennis.png" alt="Playing tennis"></div>
+                <div class="extra-icon"><img src="tennis.png" alt="Tennis icon"></div>
                 <p class="extra-label">Playing tennis</p>
               </div>
             </div>
@@ -1062,57 +1048,56 @@
             <div class="bottom-grid">
               <div>
                 <h2 class="edu-heading">Languages</h2>
-                <div class="lang-list">
-                  <div class="lang-item">
-                    <div class="lang-name">中文</div>
-                    <div class="lang-level">Fluent</div>
-                  </div>
-                  <div class="lang-item">
-                    <div class="lang-name">English</div>
-                    <div class="lang-level">Fluent</div>
-                  </div>
-                  <div class="lang-item">
-                    <div class="lang-name">안녕</div>
-                    <div class="lang-level">Beginner</div>
-                  </div>
+                <div class="lang-item">
+                  <div class="lang-name">中文</div>
+                  <div class="lang-level">Fluent</div>
+                </div>
+                <div class="lang-item">
+                  <div class="lang-name">English</div>
+                  <div class="lang-level">Fluent</div>
+                </div>
+                <div class="lang-item">
+                  <div class="lang-name">안녕</div>
+                  <div class="lang-level">Beginner</div>
                 </div>
               </div>
 
               <div>
                 <h2 class="edu-heading">School Involvement</h2>
                 <table class="involve-table">
-                  <tr>
-                    <td><strong>1. Fashion for Change</strong></td>
-                  </tr>
-                  <tr>
-                    <td><strong>2. Haebeat Dance Crew</strong></td>
-                  </tr>
-                  <tr>
-                    <td><strong>3. Christian Fellowship</strong></td>
-                  </tr>
+                  <tbody>
+                    <tr>
+                      <td>Fashion for Change</td>
+                    </tr>
+                    <tr>
+                      <td>Haebeat Dance Crew</td>
+                    </tr>
+                    <tr>
+                      <td>Christian Fellowship</td>
+                    </tr>
+                  </tbody>
                 </table>
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
         <!-- SKILLS -->
-        <div id="skills">
-          <section class="skills-top">
+        <section id="skills">
+          <div class="skills-top">
             <div class="skills-inner">
               <div class="skills-title-pill">
                 <h2>My Skills</h2>
               </div>
-
               <div class="skills-bubbles">
-                <img src="skills.png" alt="skills bubbles image placeholder">
+                <img src="skills.png" alt="Visual representation of my technical skills">
               </div>
             </div>
-          </section>
+          </div>
 
-          <section class="skills-bottom">
+          <div class="skills-bottom">
             <div class="skills-inner">
-              <div class="whyme-pill">Why Me</div>
+              <h3 class="whyme-pill">Why Me</h3>
               <div class="whyme-text">
                 <p>
                   I'm a quick and conscious learner who thrives in collaborative environments. I enjoy
@@ -1128,12 +1113,12 @@
                 <div class="whyme-divider"></div>
               </div>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
 
         <!-- PROJECTS SECTION -->
-        <div id="projects">
-          <section class="project-detail-section burger-ops" id="burger-ops">
+        <section id="projects">
+          <div class="project-detail-section burger-ops" id="burger-ops">
             <div class="project-title-wrapper">
               <img class="project-title-img" src="Burger.png" width="900" height="300" alt="Burger Ops">
             </div>
@@ -1180,7 +1165,7 @@
               </div>
             </div>
 
-            <!-- TEXT GOES BELOW ALL CARD IMAGES -->
+            <!-- Card Types -->
             <h3 class="project-subtitle">Card Types</h3>
             <p class="project-description">
               The game uses five card types to guide problem-solving, strategic trading, and ingredient collection.
@@ -1196,15 +1181,15 @@
                 design principles in an engaging format.
               </p>
             </div>
-          </section>
+          </div>
 
           <!-- WEBSITE REDESIGN PROJECT -->
-          <section class="project-detail-section website-redesign" id="website-redesign">
+          <div class="project-detail-section website-redesign" id="website-redesign">
             <div class="project-title-wrapper">
               <img class="project-title-img" src="website.png" width="900" height="300" alt="Website Redesign">
             </div>
 
-            <h3 class="project-subtitle">Why needs redesign</h3>
+            <h2 class="project-subtitle">Why needs redesign</h2>
             <p class="project-description">
               The original Purple Bubble Tea website needed a redesign because its visuals were flat and inconsistent,
               the content lacked personality and clarity, and the navigation was confusing for users. Important information
@@ -1212,22 +1197,22 @@
               warmth or identity. A redesign was necessary to improve flow, usability, and brand trust.
             </p>
 
-            <!-- Website Screenshots -->
-            <div class="screenshots-wrapper">
-              <div class="screenshots-grid">
+            <!-- Website Analysis -->
+            <div class="redesign-wrapper">
+              <div class="redesign-grid">
 
                 <!-- LEFT COLUMN -->
-                <div class="shots-col">
-                  <div class="screenshot-placeholder"><img src="w1.png" alt="Website Screenshot 1"></div>
-                  <div class="screenshot-placeholder"><img src="w3.png" alt="Website Screenshot 3"></div>
+                <div class="redesign-col">
+                  <div class="preview-card"><img src="w1.png" alt="Purple Bubble Tea homepage before redesign"></div>
+                  <div class="preview-card"><img src="w3.png" alt="Purple Bubble Tea menu page before redesign"></div>
                 </div>
 
                 <!-- RIGHT COLUMN -->
-                <div class="shots-col">
-                  <div class="screenshot-placeholder"><img src="w2.png" alt="Website Screenshot 2"></div>
-                  <div class="screenshot-placeholder"><img src="w4.png" alt="Website Screenshot 4"></div>
+                <div class="redesign-col">
+                  <div class="preview-card"><img src="w2.png" alt="Purple Bubble Tea contact page before redesign"></div>
+                  <div class="preview-card"><img src="w4.png" alt="Purple Bubble Tea about page before redesign"></div>
 
-                  <div class="screenshot-text-card">
+                  <div class="problem-card">
                     <h4>Main Problems Identified</h4>
                     <ul>
                       <li>Visual style felt inconsistent</li>
@@ -1257,15 +1242,14 @@
                 and consistency.
               </p>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
 
         <!-- FOOTER -->
         <footer>
           <h2 class="footer-name">Amy Liu</h2>
           <p class="footer-copyright">© 2025 Amy Liu. All Rights Reserved.</p>
         </footer>
-
       </div>
     </div>
   </body>
