@@ -199,6 +199,14 @@
       .project-card {
         width: 30%;
         text-align: center;
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
+        transition: transform 0.3s;
+      }
+
+      .project-card:hover {
+        transform: translateY(-8px);
       }
 
       .project-frame {
@@ -208,8 +216,8 @@
         transition: background-color 0.3s;
       }
 
-      .project-frame:hover {
-        background-color: #D9A5C7;
+      .project-card:hover .project-frame {
+        background-color: #D7A4C5;
       }
 
       .project-frame img {
@@ -218,6 +226,11 @@
         object-fit: cover;
         border-radius: 18px;
         display: block;
+        transition: transform 0.3s;
+      }
+
+      .project-card:hover .project-frame img {
+        transform: scale(1.05);
       }
 
       .project-name {
@@ -232,8 +245,8 @@
         transition: background-color 0.3s;
       }
 
-      .project-name:hover {
-        background-color: #D9A5C7;
+      .project-card:hover .project-name {
+        background-color: #DE3783;
       }
 
       /* ─────────────── EDUCATION─────────────── */
