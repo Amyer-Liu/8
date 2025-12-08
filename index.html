@@ -406,7 +406,17 @@
       }
 
       #education .edu-exp {
-        margin-top: 44px;
+        margin-top: 0px;
+        position: relative;
+      }
+
+      #education .butterfly-decoration {
+        position: absolute;
+        bottom: -180px;
+        right: -200px;
+        width: 400px;
+        height: 400px;
+        object-fit: contain;
       }
 
       #education .exp-grid {
@@ -478,81 +488,68 @@
         align-items: start;
       }
 
-      #education .edu-table-wrap {
-        width: 100%;
-        max-width: 1200px;
-        /* increase if you want even wider */
-        margin: 30px auto 0;
-        /* center */
+      #education .lang-item {
+        display: grid;
+        grid-template-columns: 55% 45%;
+        margin: 50px 0;
       }
 
-      /* table: fill the wrapper */
-      #education .edu-table {
-        width: 100%;
-        border-collapse: separate;
-        border-spacing: 0;
-        border-radius: 22px;
-        overflow: hidden;
-      }
-
-      /* header */
-      #education .edu-table th {
-        background: #9DC1D9;
-        color: #ffffff;
-        font-family: "Indie Flower", cursive;
-        font-size: 48px;
-        /* bigger title text */
-        font-weight: 400;
-        text-align: left;
-        padding: 34px 46px;
-        /* more space */
-      }
-
-      /* cells */
-      #education .edu-table td {
-        background: #ffffff;
-        color: #244196;
-        font-family: "Inconsolata", monospace;
-        font-size: 30px;
-        /* bigger body text */
-        padding: 40px 46px;
-        /* more spacing */
-        border-top: 1px solid rgba(36, 65, 150, 0.25);
-        vertical-align: middle;
-      }
-
-      /* optional: striped rows */
-      #education .edu-table tbody tr:nth-child(even) td {
-        background: #eef6ff;
-      }
-
-      /* divider between the 2 columns */
-      #education .edu-table th+th,
-      #education .edu-table td+td {
-        border-left: 1px solid rgba(36, 65, 150, 0.25);
-      }
-
-      /* inside the language cell: push name left, level right */
-      #education .lang-row {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 40px;
-      }
-
-      /* bigger language name */
-      #education .lang-row .lang-name {
-        font-size: 70px;
+      #education .lang-name {
+        font-size: 60px;
         font-weight: 900;
         line-height: 1;
       }
 
-      /* bigger level text */
-      #education .lang-row .lang-level {
-        font-size: 42px;
-        font-weight: 600;
+      #education .lang-level {
+        font-size: 40px;
+        font-weight: 400;
+        align-self: end;
         color: #d7a4c5;
-        white-space: nowrap;
+      }
+
+      #education .involve-table {
+        margin-top: 60px;
+        border-radius: 15px;
+        width: 100%;
+        border-spacing: 0;
+        overflow: hidden;
+        margin-left: -30px;
+      }
+
+      #education .involve-table thead {
+        background-color: #9DC1D9;
+      }
+
+      #education .involve-table th {
+        padding: 20px 20px;
+        color: #ffffff;
+        font-size: 35px;
+        font-weight: 900;
+        text-align: center;
+        font-family: "Indie Flower", cursive;
+      }
+
+      #education .involve-table td {
+        padding: 20px 30px;
+        border-bottom: 1px solid #e0e0e0;
+        color: #244196;
+        font-size: 28px;
+        line-height: 1.6;
+        font-weight: 400;
+        background-color: #f8f8f8;
+      }
+
+      #education .involve-table tr:nth-child(even) td {
+        background-color: #ffffff;
+      }
+
+      #education .involve-table tr:last-child td {
+        border-bottom: none;
+      }
+
+      #education .involve-table tr:hover td {
+        background-color: #e6f2ff;
+        transition: background-color 0.2s ease;
       }
 
 
@@ -1071,6 +1068,7 @@
                   </div>
                 </div>
               </div>
+              <img src="scribble8.png" class="butterfly-decoration" alt="">
             </div>
           </div>
 
@@ -1111,48 +1109,40 @@
 
           <div class="edu-bottom">
             <div class="bottom-grid">
-              <div class="edu-table-wrap">
-                <table class="edu-table">
-                  <thead>
-                    <tr>
-                      <th>Languages</th>
-                      <th>School Involvement</th>
-                    </tr>
-                  </thead>
-
-                  <tbody>
-                    <tr>
-                      <td>
-                        <div class="lang-row">
-                          <span class="lang-name">中文</span>
-                          <span class="lang-level">Fluent</span>
-                        </div>
-                      </td>
-                      <td>Fashion for Change</td>
-                    </tr>
-
-                    <tr>
-                      <td>
-                        <div class="lang-row">
-                          <span class="lang-name">English</span>
-                          <span class="lang-level">Fluent</span>
-                        </div>
-                      </td>
-                      <td>Haebeat Dance Crew</td>
-                    </tr>
-
-                    <tr>
-                      <td>
-                        <div class="lang-row">
-                          <span class="lang-name">안녕</span>
-                          <span class="lang-level">Beginner</span>
-                        </div>
-                      </td>
-                      <td>Christian Fellowship</td>
-                    </tr>
-                  </tbody>
-                </table>
+              <div>
+                <h2 class="edu-heading">Languages</h2>
+                <div class="lang-item">
+                  <div class="lang-name">中文</div>
+                  <div class="lang-level">Fluent</div>
+                </div>
+                <div class="lang-item">
+                  <div class="lang-name">English</div>
+                  <div class="lang-level">Fluent</div>
+                </div>
+                <div class="lang-item">
+                  <div class="lang-name">안녕</div>
+                  <div class="lang-level">Beginner</div>
+                </div>
               </div>
+
+              <table class="involve-table">
+                <thead>
+                  <tr>
+                    <th>School Involvement</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Fashion for Change</td>
+                  </tr>
+                  <tr>
+                    <td>Haebeat Dance Crew</td>
+                  </tr>
+                  <tr>
+                    <td>Christian Fellowship</td>
+                  </tr>
+                </tbody>
+              </table>
 
             </div>
           </div>
