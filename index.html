@@ -625,9 +625,9 @@
 
       #skills .whyme-scribble {
         position: absolute;
-        top: -90px;
+        top: -50px;
         left: -80px;
-        width: 700px;
+        width: 500px;
         height: auto;
         z-index: 5;
       }
@@ -801,6 +801,7 @@
         background: white;
         padding: 40px;
         box-sizing: border-box;
+        position: relative;
       }
 
       #projects .redesign-grid {
@@ -825,6 +826,15 @@
         display: flex;
         flex-direction: column;
         gap: 25px;
+      }
+
+      #projects .redesign-dog {
+        position: absolute;
+        bottom: -50px;
+        left: 0px;
+        width: 250px;
+        height: auto;
+        z-index: 10;
       }
 
       #projects .problem-card {
@@ -1223,7 +1233,7 @@
             <div class="all-cards-wrapper">
               <div class="cards-grid">
                 <div class="card-placeholder">
-                  <img src="core-card.png" alt="Core Ingredient Card">
+                  <img src="instruction.png" alt="Core Ingredient Card">
                 </div>
                 <div class="card-placeholder">
                   <img src="order-card.png" alt="Order Card">
@@ -1250,8 +1260,12 @@
                   <div class="ingredient-card-placeholder"><img src="onion.png" alt="Onion Card"></div>
 
                   <!-- Row 3 -->
+                  <div class="ingredient-card-placeholder"><img src="core.png" alt="Core ingredient card"></div>
+                  <div class="ingredient-card-placeholder"><img src="bun.png" alt="Buns card"></div>
+                  <div class="ingredient-card-placeholder"><img src="patty.png" alt="Patty card"></div>
                   <div class="ingredient-card-placeholder"><img src="tomato.png" alt="Tomato Card"></div>
                   <div class="ingredient-card-placeholder"><img src="lettuce.png" alt="Lettuce Card"></div>
+
                 </div>
               </div>
             </div>
@@ -1287,17 +1301,15 @@
               was difficult to read, interactive elements were unclear, and the overall design failed to reflect the brand's
               warmth or identity. A redesign was necessary to improve flow, usability, and brand trust.
             </p>
-
-            <!-- Website Analysis -->
             <div class="redesign-wrapper">
-              <div class="redesign-grid">
+              <img class="redesign-dog" src="dog.png" alt="Decorative dog character">
 
+              <div class="redesign-grid">
                 <!-- LEFT COLUMN -->
                 <div class="redesign-col">
                   <div class="preview-card"><img src="w1.png" alt="Purple Bubble Tea homepage before redesign"></div>
                   <div class="preview-card"><img src="w3.png" alt="Purple Bubble Tea menu page before redesign"></div>
                 </div>
-
                 <!-- RIGHT COLUMN -->
                 <div class="redesign-col">
                   <div class="preview-card"><img src="w2.png" alt="Purple Bubble Tea contact page before redesign"></div>
@@ -1316,7 +1328,6 @@
                     </a>
                   </div>
                 </div>
-
               </div>
             </div>
 
