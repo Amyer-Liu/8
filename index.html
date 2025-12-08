@@ -28,7 +28,7 @@
       .content-wrapper {
         width: 1200px;
         margin: 0 auto;
-        background-color: white;
+        background-color: #ffffff;
         padding-top: 50px;
       }
 
@@ -60,7 +60,7 @@
         font-weight: 600;
         font-size: 40px;
         color: #d7a4c5;
-        padding: 0.3em 0.7em;
+        padding: 0.3em 0.6em;
       }
 
       nav a:visited {
@@ -125,6 +125,12 @@
         position: relative;
       }
 
+      /* ✅ FIX 1: lift left column above absolute decorations */
+      .left-column {
+        position: relative;
+        z-index: 20;
+      }
+
       .left-column img {
         width: 100%;
         height: auto;
@@ -141,6 +147,10 @@
         margin: -1em 0 0 -2em;
         font-size: 22px;
         line-height: 1.2;
+
+        /* ✅ FIX 2: ensure contact box (and links) are on top */
+        position: relative;
+        z-index: 30;
       }
 
       .contact-box h3 {
@@ -211,6 +221,12 @@
 
       .about-dec-line-3 {
         right: 830px;
+      }
+
+      .about-character,
+      .about-dec,
+      .about-dec-line {
+        pointer-events: none;
       }
 
 
