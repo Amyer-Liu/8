@@ -20,7 +20,8 @@
       }
 
       .frame {
-        width: 1440px;
+        width: 100%;
+        max-width: 1440px;
         background-color: #f7f4ef;
         padding: 120px 0;
       }
@@ -119,13 +120,11 @@
         display: grid;
         grid-template-columns: 40% 60%;
         gap: 40px;
-        background-color: #244196;
         padding: 4em 5em 4em;
         align-items: flex-start;
         position: relative;
       }
 
-      /* ✅ FIX 1: lift left column above absolute decorations */
       .left-column {
         position: relative;
         z-index: 20;
@@ -147,8 +146,6 @@
         margin: -1em 0 0 -2em;
         font-size: 22px;
         line-height: 1.2;
-
-        /* ✅ FIX 2: ensure contact box (and links) are on top */
         position: relative;
         z-index: 30;
       }
@@ -229,7 +226,6 @@
         pointer-events: none;
       }
 
-
       /* ─────────────── HOME:PROJECT OVERVIEW─────────────── */
       .projects {
         background-color: #ede8e2;
@@ -263,7 +259,7 @@
       }
 
       .project-card:hover {
-        transform: translateY(-4px);
+        transform: translateY(-2px);
       }
 
       .project-frame {
@@ -318,7 +314,7 @@
 
       #education .edu-top {
         background-color: #244196;
-        color: white;
+        color: #ffffff;
         padding: 6em 6em 2em;
       }
 
@@ -331,11 +327,11 @@
 
       #education .edu-heading {
         font-family: "Indie Flower", cursive;
-        font-size: 50px;
+        font-size: 60px;
         letter-spacing: 1.5px;
         text-transform: uppercase;
-        margin: 0 0 40px 0;
-        color: white;
+        margin: 0 0 40px 10px;
+        color: #ffffff;
       }
 
       #education .timeline-item {
@@ -364,15 +360,14 @@
       }
 
       #education .timeline-title {
-        margin: 0 0 8px 0;
+        margin: 0 0 8px 2em;
         font-size: 35px;
         font-weight: 200;
-        margin-left: 2em;
       }
 
       #education .timeline-sub {
         margin: 0;
-        font-size: 27px;
+        font-size: 28px;
         line-height: 1.5;
         max-width: 400px;
         margin-left: 2.7em;
@@ -384,7 +379,7 @@
         grid-template-columns: 60px 1fr;
         gap: 22px;
         align-items: center;
-        margin: 40px 0;
+        margin: 50px 0;
       }
 
       #education .software-badge {
@@ -419,7 +414,6 @@
       }
 
       #education .edu-exp {
-        margin-top: 0px;
         position: relative;
       }
 
@@ -440,7 +434,7 @@
       }
 
       #education .edu-extras {
-        background-color: #edE8e2;
+        background-color: #ede8e2;
         color: #244196;
         padding: 48px 90px 54px;
         text-align: center;
@@ -482,7 +476,7 @@
 
       #education .extra-label {
         margin: 0;
-        color: #DE3783;
+        color: #de3783;
         font-weight: 700;
         font-size: 30px;
         line-height: 1.15;
@@ -500,6 +494,19 @@
         grid-template-columns: 50% 50%;
         gap: 60px;
         align-items: start;
+      }
+
+      #education .table-wrapper {
+        position: relative;
+      }
+
+      #education .line-decoration {
+        position: absolute;
+        top: -30px;
+        right: 0;
+        width: 700px;
+        height: auto;
+        z-index: 5;
       }
 
       #education .lang-item {
@@ -522,61 +529,38 @@
       }
 
       #education .involve-table {
-        margin-top: 60px;
-        border-radius: 15px;
+        margin: 110px 0 0 -30px;
         width: 100%;
-        border-spacing: 0;
-        overflow: hidden;
-        margin-left: -30px;
-      }
-
-      #education .involve-table thead {
-        background-color: #9DC1D9;
+        border: 3px solid #9dc1d9;
+        border-radius: 20px;
       }
 
       #education .involve-table th {
-        padding: 20px 20px;
+        background-color: #9dc1d9;
         color: #ffffff;
-        font-size: 35px;
-        font-weight: 900;
-        text-align: center;
+        padding: 20px;
+        font-size: 40px;
         font-family: "Indie Flower", cursive;
       }
 
       #education .involve-table td {
-        padding: 20px 30px;
-        border-bottom: 1px solid #e0e0e0;
-        color: #244196;
-        font-size: 28px;
-        line-height: 1.6;
-        font-weight: 400;
         background-color: #f8f8f8;
-      }
-
-      #education .involve-table tr:nth-child(even) td {
-        background-color: #ffffff;
-      }
-
-      #education .involve-table tr:last-child td {
-        border-bottom: none;
-      }
-
-      #education .involve-table tr:hover td {
-        background-color: #e6f2ff;
-        transition: background-color 0.2s ease;
+        color: #244196;
+        padding: 20px 30px;
+        font-size: 28px;
+        border-bottom: 1px solid #e0e0e0;
       }
 
       #education .book-image {
         position: absolute;
-        bottom: -120px;
+        bottom: -10px;
         right: -80px;
         z-index: 10;
       }
 
       #education .book-image img {
-        width: 400px;
+        width: 300px;
         height: auto;
-
       }
 
       /* ─────────────── SKILLS SECTION─────────────── */
@@ -938,7 +922,7 @@
 
         <!-- HEADER -->
         <div class="header-banner">
-          <img src="Banner.jpg" width="1080" height="360" alt="Portfolio banner designed in Procreate">
+          <img src="Banner.jpg" width="1080" height="360" alt="I designed this ortfolio banner in Procreate">
         </div>
 
         <!-- NAV -->
@@ -970,41 +954,43 @@
               <p>As a junior designer, I believe meaningful digital experiences begin with understanding people. I'm passionate about creating intuitive, human-centred interfaces that make users feel supported and empowered.</p>
               <p>Having lived in three different countries, I've been shaped by diverse cultures and ways of communicating. This global perspective fuels my curiosity and empathy as a designer. I love exploring cultural behaviours and design traditions around the world, then weaving those insights into inclusive, thoughtful, and culturally aware digital experiences.</p>
 
-              <img class="about-character" src="dec1.png" alt="Decorative cartoon character">
-              <img class="about-dec" src="scribble1.png" alt="Decorative sparkle element">
-              <img class="about-dec-line" src="cloudline.png" alt="Decorative line element">
-              <img class="about-dec-line about-dec-line-2" src="cloudline.png" alt="Decorative line element">
-              <img class="about-dec-line about-dec-line-3" src="cloudline.png" alt="Decorative line element">
+              <img class="about-character" src="dec1.png" width="180" height="180" alt="Decorative cartoon character">
+              <img class="about-dec" src="scribble1.png" width="200" height="200" alt="Decorative sparkle element">
+              <img class="about-dec-line" src="cloudline.png" width="350" height="120" alt="Decorative line element">
+              <img class="about-dec-line about-dec-line-2" src="cloudline.png" width="350" height="120" alt="Decorative line element">
+              <img class="about-dec-line about-dec-line-3" src="cloudline.png" width="350" height="120" alt="Decorative line element">
             </div>
           </div>
         </section>
 
-        <!-- HOME:PROJECT SECTION -->
-        <div class="projects">
-          <h2>Project Overview</h2>
-          <div class="project-row">
-            <a href="#burger-ops" class="project-card">
-              <div class="project-frame">
-                <img src="design1.PNG" width="600" height="600" alt="Burger Ops card game project">
-              </div>
-              <p class="project-name">Card Game Design</p>
-            </a>
+        <!-- HOME:PROJECT OVERVIEW SECTION -->
+        <section id="projects">
+          <div class="projects">
+            <h2>Project Overview</h2>
 
-            <a href="#website-redesign" class="project-card">
-              <div class="project-frame">
-                <img src="design2.PNG" width="800" height="450" alt="Purple Bubble Tea website redesign project">
-              </div>
-              <p class="project-name">Website Redesign</p>
-            </a>
+            <div class="project-row">
+              <a href="#burger-ops" class="project-card">
+                <div class="project-frame">
+                  <img src="design1.PNG" width="600" height="600" alt="Burger Ops card game project">
+                </div>
+                <p class="project-name">Card Game Design</p>
+              </a>
 
-            <a href="#poster-design" class="project-card">
-              <div class="project-frame">
-                <img src="design3.PNG" width="600" height="900" alt="GBDA 101 poster design project">
-              </div>
-              <p class="project-name">Poster Design</p>
-            </a>
+              <a href="#website-redesign" class="project-card">
+                <div class="project-frame">
+                  <img src="design2.PNG" width="800" height="450" alt="Purple Bubble Tea website redesign project">
+                </div>
+                <p class="project-name">Website Redesign</p>
+              </a>
+
+              <a href="#poster-design" class="project-card">
+                <div class="project-frame">
+                  <img src="design3.PNG" width="600" height="900" alt="GBDA 101 poster design project">
+                </div>
+                <p class="project-name">Poster Design</p>
+              </a>
+            </div>
           </div>
-        </div>
         </section>
 
         <!-- EDUCATION -->
@@ -1174,24 +1160,27 @@
                 </div>
               </div>
 
-              <table class="involve-table">
-                <thead>
-                  <tr>
-                    <th>School Involvement</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Fashion for Change</td>
-                  </tr>
-                  <tr>
-                    <td>Haebeat Dance Crew</td>
-                  </tr>
-                  <tr>
-                    <td>Christian Fellowship</td>
-                  </tr>
-                </tbody>
-              </table>
+              <div>
+                <img src="line3.png" class="line-decoration" alt="">
+                <table class="involve-table">
+                  <thead>
+                    <tr>
+                      <th>School Involvement</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Fashion for Change</td>
+                    </tr>
+                    <tr>
+                      <td>Haebeat Dance Crew</td>
+                    </tr>
+                    <tr>
+                      <td>Christian Fellowship</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
               <div class="book-image">
                 <img src="book.png" alt="Book">
               </div>
